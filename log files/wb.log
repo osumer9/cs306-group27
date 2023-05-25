@@ -1,0 +1,139 @@
+19:00:59 [INF][      Workbench]: Starting up Workbench
+19:01:00 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources
+	plugin path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/PlugIns
+	struct path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/grt
+	module path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/PlugIns:/Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/plugins
+	library path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/libraries
+	user data dir: /Users/mortonorto/Library/Application Support/MySQL/Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+19:01:00 [INF][      WBContext]: WbContext::init
+19:01:00 [INF][            WBA]: Looking for extension modules for WBA...
+19:01:00 [INF][            WBA]: 0 extension modules found
+19:01:00 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+19:01:00 [WRN][            grt]: /Users/mortonorto/Library/Application Support/MySQL/Workbench/connections.xml:17: link '97D4775D-E92C-497D-B40D-75AE872069C1' <object GrtObject> key=owner could not be resolved
+19:01:00 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+19:01:00 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for macOS version 8.0.31 CE build 2235049 (64 bit)
+	Configuration Directory: /Users/mortonorto/Library/Application Support/MySQL/Workbench
+	Data Directory: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources
+	Cairo Version: 1.17.4
+	OS: macOS 12.x Monterey x86_64
+	CPU: 8x Apple M2 - 16.00GiB RAM
+No video adapter info available
+
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_sakila_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_manage_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_network_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_user_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_number_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_open_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_more_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_sakila_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_manage_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_network_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_user_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_number_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_open_dark@2x.png
+19:01:00 [WRN][         mforms]: Resource file not found: wb_tile_more_dark@2x.png
+19:01:02 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+19:01:02 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+19:01:04 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.32
+19:01:04 [WRN][         mforms]: Resource file not found: snippet_sql@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_statement@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_error@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_breakpoint@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_breakpoint_hit@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_current_pos@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: editor_continue_on_error@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_keyword@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_schema@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_table@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_routine@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_function@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_view@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_column@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_operator@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_engine@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_trigger@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_logfilegroup@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_uservar@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_sysvar@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_tablespace@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_event@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_index@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_user@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_charset@2x.png
+19:01:04 [WRN][         mforms]: Resource file not found: ac_collation@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:01:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+19:02:29 [WRN][  TableEditorBE]: VARCHAR() is not a valid column type
+19:03:37 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:03:37 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:04:03 [ERR][       pymforms]: Unhandled exception in Python code: 
+19:04:12 [INF][         Wizard]: Execute 'Prepare Import'
+19:04:12 [INF][         Wizard]: Starting thread for 'Import data file'
+19:04:18 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:04:18 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:06:04 [ERR][       pymforms]: Unhandled exception in Python code: 
+19:06:12 [INF][         Wizard]: Execute 'Prepare Import'
+19:06:12 [INF][         Wizard]: Starting thread for 'Import data file'
+19:07:34 [ERR][       pymforms]: Unhandled exception in Python code: 
+19:07:49 [INF][         Wizard]: Execute 'Prepare Import'
+19:07:50 [INF][         Wizard]: Starting thread for 'Import data file'
+19:12:05 [WRN][  TableEditorBE]: VARCHAR() is not a valid column type
+19:12:31 [ERR][       pymforms]: Unhandled exception in Python code: 
+19:12:44 [INF][         Wizard]: Execute 'Prepare Import'
+19:12:44 [INF][         Wizard]: Starting thread for 'Import data file'
+19:14:09 [ERR][       pymforms]: Unhandled exception in Python code: 
+19:14:16 [INF][         Wizard]: Execute 'Prepare Import'
+19:14:16 [INF][         Wizard]: Starting thread for 'Import data file'
+19:14:26 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:14:26 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:14:29 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:14:29 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:14:31 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:14:31 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:14:33 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:14:33 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+19:14:35 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+19:14:35 [WRN][         mforms]: Resource file not found: arrow_down@2x.png

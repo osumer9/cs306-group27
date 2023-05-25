@@ -1,0 +1,1318 @@
+15:10:12 [INF][      Workbench]: Starting up Workbench
+15:10:12 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /Applications/MySQLWorkbench.app/Contents/Resources
+	plugin path: /Applications/MySQLWorkbench.app/Contents/PlugIns
+	struct path: /Applications/MySQLWorkbench.app/Contents/Resources/grt
+	module path: /Applications/MySQLWorkbench.app/Contents/PlugIns:/Applications/MySQLWorkbench.app/Contents/Resources/plugins
+	library path: /Applications/MySQLWorkbench.app/Contents/Resources/libraries
+	user data dir: /Users/hayrettinsendag/Library/Application Support/MySQL/Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+15:10:12 [INF][      WBContext]: WbContext::init
+15:10:12 [INF][            WBA]: Looking for extension modules for WBA...
+15:10:12 [INF][            WBA]: 0 extension modules found
+15:10:12 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+15:10:12 [WRN][            grt]: /Users/hayrettinsendag/Library/Application Support/MySQL/Workbench/connections.xml:17: link '440ED705-BBD1-4FFD-82A5-64D9EFF35944' <object GrtObject> key=owner could not be resolved
+15:10:12 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+15:10:12 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for macOS version 8.0.30 CE build 2054668 (64 bit)
+	Configuration Directory: /Users/hayrettinsendag/Library/Application Support/MySQL/Workbench
+	Data Directory: /Applications/MySQLWorkbench.app/Contents/Resources
+	Cairo Version: 1.17.4
+	OS: macOS 11.x Big Sur x86_64
+	CPU: 4x Intel(R) Core(TM) i5-4288U CPU @ 2.60GHz - 8.00GiB RAM
+No video adapter info available
+
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_sakila_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_manage_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_network_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_plus_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_user_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_plus_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_number_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_open_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_more_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_sakila_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_manage_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_network_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_plus_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_user_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_plus_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_number_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_open_light@2x.png
+15:10:13 [WRN][         mforms]: Resource file not found: wb_tile_more_light@2x.png
+15:10:13 [WRN][       WBModule]: OS not found on supported OS list. OS string: 'macOS 11.x Big Sur x86_64'
+15:10:35 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+15:10:35 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+15:10:37 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:10:37 [WRN][         mforms]: Resource file not found: snippet_sql@2x.png
+15:10:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:37 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_statement@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_error@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_breakpoint@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_breakpoint_hit@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_current_pos@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: editor_continue_on_error@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_keyword@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_schema@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_table@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_routine@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_function@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_view@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_column@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_operator@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_engine@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_trigger@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_logfilegroup@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_uservar@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_sysvar@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_tablespace@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_event@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_index@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_user@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_charset@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: ac_collation@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:10:53 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:11:20 [ERR][ sqlide-history]: Can't open SQL history file /Users/hayrettinsendag/Library/Application Support/MySQL/Workbench/sql_history/2023-03-28
+15:16:00 [INF][         Wizard]: Execute 'Prepare Import'
+15:16:00 [INF][         Wizard]: Starting thread for 'Import data file'
+15:17:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:33 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:34 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:17:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:18:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:18:04 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:18:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:18:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:18:26 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:18:26 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:18:36 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:18:36 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:19:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:19:14 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:19:14 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:19:14 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:19:14 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:20:17 [ERR][SQL Editor Form]: 
+15:20:55 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:20:58 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:20:58 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:20:58 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:20:58 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:22:54 [WRN][         mforms]: Resource file not found: snippet_mwb@2x.png
+15:22:54 [ERR][SQL Editor Form]: Unable to create db_mgmt_SSHConnectionRef object
+15:27:39 [INF][         Wizard]: Execute 'Prepare Import'
+15:27:39 [INF][         Wizard]: Starting thread for 'Import data file'
+15:27:54 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:28:01 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:28:01 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:29:17 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:29:17 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:30:35 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:30:35 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:30:35 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:30:35 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:30:35 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:30:35 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:57 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:57 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:57 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:57 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:57 [INF][wb_admin_control.py:query_server_installation_info:858]: Currently connected to MySQL server version '8.0.30', conn status = True, active plugins = ['PERFORMANCE_SCHEMA', 'INNODB_METRICS', 'INNODB_CMPMEM', 'MRG_MYISAM', 'INNODB_TRX', 'sha2_cache_cleaner', 'mysqlx_cache_cleaner', 'INNODB_BUFFER_POOL_STATS', 'INNODB_CMP_PER_INDEX_RESET', 'INNODB_COLUMNS', 'INNODB_FT_INDEX_CACHE', 'BLACKHOLE', 'INNODB_CMP_RESET', 'daemon_keyring_proxy_plugin', 'INNODB_CMP', 'INNODB_FT_DEFAULT_STOPWORD', 'ARCHIVE', 'INNODB_TABLESPACES', 'mysql_native_password', 'INNODB_BUFFER_PAGE_LRU', 'INNODB_TEMP_TABLE_INFO', 'TempTable', 'INNODB_BUFFER_PAGE', 'INNODB_CMP_PER_INDEX', 'keyring_file', 'ngram', 'INNODB_VIRTUAL', 'INNODB_TABLES', 'INNODB_TABLESTATS', 'sha256_password', 'MyISAM', 'mysqlx', 'INNODB_SESSION_TEMP_TABLESPACES', 'INNODB_FT_CONFIG', 'INNODB_CACHED_INDEXES', 'INNODB_INDEXES', 'INNODB_FT_BEING_DELETED', 'caching_sha2_password', 'INNODB_FT_INDEX_TABLE', 'binlog', 'INNODB_FT_DELETED', 'InnoDB', 'MEMORY', 'CSV', 'INNODB_CMPMEM_RESET']
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:31:58 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:03 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:04 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:06 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:07 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:08 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+15:32:14 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:32:14 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:32:18 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:32:18 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:32:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:32:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:33:23 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:33:23 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:33:32 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:33:32 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:33:32 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:33:32 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:33:40 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:33:40 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:34:41 [INF][         Wizard]: Execute 'Prepare Import'
+15:34:41 [INF][         Wizard]: Starting thread for 'Import data file'
+15:35:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:35:12 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:35:12 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:35:12 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:35:12 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:39:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:39:06 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:40:58 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:40:58 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:40:58 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:40:58 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:41:01 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:41:01 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:44:28 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+15:44:28 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+15:44:28 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:44:28 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+15:44:42 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+15:44:42 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+15:55:37 [INF][            grt]: Connecting to Mysql@localhost:3306...	
+15:55:39 [INF][            grt]: Connecting to Mysql@localhost:3306...	
+15:55:39 [INF][            grt]: Connected to Mysql@localhost:3306, 8.0.30	
+15:58:11 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:58:12 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:58:12 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:58:12 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:58:12 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:58:12 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+15:59:25 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:00:01 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:00:01 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:00:22 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:00:41 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:00:42 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:01:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:01:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:01:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:01:18 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:01:18 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:01:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:01:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:01:18 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+16:01:44 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:01:44 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:02:03 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:02:03 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:02:03 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:02:03 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:02:03 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+16:02:06 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:02:06 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:02:43 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:02:43 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:02:43 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:02:43 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:02:43 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+16:02:45 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:02:45 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:03:07 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:03:07 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:03:09 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:03:09 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:03:09 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:03:09 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:03:13 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:03:13 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:05:05 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:05:05 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:05:05 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:05:05 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:05:05 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+16:06:21 [ERR][SQL Editor Form]: 
+16:07:29 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:07:29 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:07:35 [ERR][SQL Editor Form]: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'allocates_ibfk_1' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`allocates` 
+ADD CONSTRAINT `allocates_ibfk_1`
+  FOREIGN KEY (`population_id` , `exp_id`)
+  REFERENCES `cs306`.`country` (`population_id` , `population_id`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE
+
+
+16:07:42 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:07:42 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:08:04 [ERR][SQL Editor Form]: Error 1091: Can't DROP 'allocates_ibfk_1'; check that column/key exists
+SQL Statement:
+ALTER TABLE `cs306`.`allocates` 
+DROP FOREIGN KEY `allocates_ibfk_1`
+
+
+16:09:12 [WRN][         mforms]: Resource file not found: db.StoredProcedure.16x16.png
+16:09:12 [WRN][         mforms]: Resource file not found: db.Function.16x16.png
+16:09:12 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:10:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:10:32 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+16:10:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:10:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:10:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:10:56 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+16:10:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:10:56 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:11:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:11:04 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+16:11:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:11:04 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+16:16:10 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:38:07 [INF][  TableEditorBE]: Creating stub schema and table cs306.allocates for foreign key
+16:38:12 [INF][  TableEditorBE]: Creating stub schema and table cs306.country_instance for foreign key
+16:39:12 [INF][  TableEditorBE]: Creating stub schema and table cs306.allocates for foreign key
+16:39:14 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+16:39:25 [INF][  TableEditorBE]: Creating stub schema and table cs306.allocates for foreign key
+16:39:26 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+16:39:32 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditures for foreign key
+16:39:39 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditures for foreign key
+16:43:04 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:43:04 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:43:26 [ERR][SQL Editor Form]: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`allocates` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`year` , `country_code`)
+  REFERENCES `cs306`.`country` (`population_instance_id` , `country_name`),
+ADD CONSTRAINT `year`
+  FOREIGN KEY (`year` , `country_code`)
+  REFERENCES `cs306`.`expenditures` (`exp_id` , `country_code`)
+
+
+16:47:14 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:47:14 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:47:30 [ERR][SQL Editor Form]: Error 1054: Unknown column '' in 'country'
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+DROP COLUMN `population`,
+DROP COLUMN `year`,
+DROP COLUMN `population_instance_id`,
+CHANGE COLUMN `` `country_code` CHAR(3) NOT NULL ,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`country_code`)
+
+
+16:48:03 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:04 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:48:10 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:48:10 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:48:10 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:48:10 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:51:01 [INF][         Wizard]: Execute 'Prepare Import'
+16:51:01 [INF][         Wizard]: Starting thread for 'Import data file'
+16:51:08 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:51:08 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:51:11 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:51:17 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:51:17 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:51:25 [ERR][SQL Editor Form]: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+16:51:31 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:51:31 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:51:49 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:51:49 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:52:04 [ERR][SQL Editor Form]: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+16:52:08 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:52:08 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:52:14 [ERR][SQL Editor Form]: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+16:52:50 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:52:50 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:52:53 [ERR][SQL Editor Form]: Error 1406: Data too long for column 'country_name' at row 24
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(20) NULL DEFAULT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(3) NULL DEFAULT NULL 
+
+
+16:53:03 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:53:03 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:53:11 [ERR][SQL Editor Form]: Error 1406: Data too long for column 'country_name' at row 24
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(20) NOT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(3) NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+16:53:18 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+16:53:18 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+16:53:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:53:18 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+16:53:20 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+16:53:20 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+16:54:08 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:54:08 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:54:22 [ERR][SQL Editor Form]: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ,
+ADD PRIMARY KEY (`country_code`),
+ADD UNIQUE INDEX `country_name_UNIQUE` (`c' at line 3
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(30) NULL DEFAULT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(4) GENERATED ALWAYS AS () ,
+ADD PRIMARY KEY (`country_code`),
+ADD UNIQUE INDEX `country_name_UNIQUE` (`country_name` ASC) VISIBLE
+
+
+16:57:46 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:57:47 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:57:47 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+16:58:14 [ERR][SqlEditorSchemaTree]: Error getting SQL definition for cs306.allocates: Table 'cs306.allocates' doesn't exist
+16:58:18 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditures for foreign key
+16:58:37 [ERR][SqlEditorSchemaTree]: Error getting SQL definition for cs306.allocates: Table 'cs306.allocates' doesn't exist
+16:58:41 [INF][  TableEditorBE]: Creating stub schema and table cs306.enrollment for foreign key
+16:58:53 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditures for foreign key
+16:59:13 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+16:59:13 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+16:59:47 [ERR][SQL Editor Form]: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NULL,
+  `exp_id` INT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+17:00:03 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:00:03 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:00:06 [ERR][SQL Editor Form]: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE CASCADE
+    ON UPDATE C' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NOT NULL,
+  `exp_id` INT NOT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+17:00:19 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:00:19 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:00:58 [ERR][SQL Editor Form]: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NOT NULL,
+  `exp_id` INT NOT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+17:02:13 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+17:05:26 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+17:06:00 [INF][  TableEditorBE]: Creating stub schema and table cs306.allocates for foreign key
+17:06:06 [INF][  TableEditorBE]: Creating stub schema and table cs306.enrollment for foreign key
+17:06:14 [INF][  TableEditorBE]: Creating stub schema and table cs306.allocates for foreign key
+17:06:17 [INF][  TableEditorBE]: Creating stub schema and table cs306.teacher_quality for foreign key
+17:06:31 [INF][  TableEditorBE]: Creating stub schema and table cs306.literacy_reports for foreign key
+17:06:36 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:06:36 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:06:52 [ERR][SQL Editor Form]: Error 1826: Duplicate foreign key constraint name 'country_code'
+SQL Statement:
+
+ALTER TABLE `cs306`.`proclaims` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`country` (`country_code`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `enr_id`
+  FOREIGN KEY (`enr_id`)
+  REFERENCES `cs306`.`enrollment` (`enr_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `quality_id`
+  FOREIGN KEY (`quality_id`)
+  REFERENCES `cs306`.`teacher_quality` (`quality_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `report_id`
+  FOREIGN KEY (`report_id`)
+  REFERENCES `cs306`.`literacy_reports` (`report_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+17:07:51 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:07:51 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:08:27 [ERR][SQL Editor Form]: Error 1061: Duplicate key name 'country_code_idx'
+SQL Statement:
+ALTER TABLE `cs306`.`proclaims` 
+ADD INDEX `country_code_idx` (`country_code` ASC) VISIBLE,
+ADD INDEX `enr_id_idx` (`enr_id` ASC) VISIBLE,
+ADD INDEX `quality_id_idx` (`quality_id` ASC) VISIBLE,
+ADD INDEX `report_id_idx` (`report_id` ASC) VISIBLE
+
+
+17:12:34 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+17:12:52 [ERR][SqlEditorSchemaTree]: Error getting SQL definition for cs306.expenditures: Table 'cs306.expenditures' doesn't exist
+17:14:34 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+17:14:35 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+17:15:23 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+17:15:38 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditure_report for foreign key
+17:15:48 [INF][  TableEditorBE]: Creating stub schema and table cs306.enrollment for foreign key
+17:16:00 [INF][  TableEditorBE]: Creating stub schema and table cs306.teacher_quality for foreign key
+17:16:11 [INF][  TableEditorBE]: Creating stub schema and table cs306.literacy_reports for foreign key
+17:17:04 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+17:17:05 [INF][SQL Editor Form]: Opened connection 'Local instance 3306' to MySQL Community Server - GPL version 8.0.30
+17:17:11 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:17:11 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:17:11 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:17:11 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:17:11 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:17:23 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:17:23 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:17:23 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:17:23 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:17:23 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:17:26 [ERR][       pymforms]: Unhandled exception in Python code: 
+17:17:59 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:17:59 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:18:01 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:18:01 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:18:01 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:01 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:01 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:18:09 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:18:09 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:18:09 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:09 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:09 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:18:15 [ERR][       pymforms]: Unhandled exception in Python code: 
+17:18:16 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:18:16 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:18:16 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:16 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:16 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:18:20 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+17:18:20 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+17:18:20 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:20 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+17:18:20 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+17:18:22 [ERR][       pymforms]: Unhandled exception in Python code: 
+17:18:54 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:18:54 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:18:56 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:18:56 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:19:06 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:19:06 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:19:28 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:19:28 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:19:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:32 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:32 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:33 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:19:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:19:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:41 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:27:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:41 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:27:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:27:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:35 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:35 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:36 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:37 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:38 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:39 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:42 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:43 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:47 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:47 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:33:47 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:33:47 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: wb_perform_config@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:05 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+17:34:11 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:34:11 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:37:10 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+17:37:10 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+17:37:44 [INF][  TableEditorBE]: Creating stub schema and table cs306.country for foreign key
+17:37:48 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:37:48 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:37:50 [ERR][SQL Editor Form]: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`enrollment_report` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`country` (`country_name`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+17:37:58 [INF][  TableEditorBE]: Creating stub schema and table cs306.enrollment_report for foreign key
+17:52:32 [INF][  TableEditorBE]: Creating stub schema and table cs306.expenditure_report for foreign key
+17:52:40 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: There was an error while applying the SQL script to the database.
+17:52:40 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.There was an error while applying the SQL script to the database.
+17:52:46 [ERR][SQL Editor Form]: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'expenditure_report'
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`expenditure_report` (`country_code`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+18:12:37 [WRN][         mforms]: Resource file not found: db.Constraints.16x16.png
+18:12:37 [WRN][         mforms]: Resource file not found: db.Partitions.16x16.png
+18:12:37 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+18:12:37 [WRN][         mforms]: Resource file not found: db.Grants.16x16.png
+18:12:37 [ERR][sqlide_tableman_ext.py:show_table:1186]: Error initializing tab constraints: Traceback (most recent call last):
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 1183, in show_table
+    tab.show_table(schema, table)
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_tableman_ext.py", line 854, in show_table
+    self.refresh()
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 373, in refresh
+    self.preload_data(self.get_query())
+  File "/Applications/MySQLWorkbench.app/Contents/Resources/plugins/sqlide_catalogman_ext.py", line 367, in preload_data
+    node.set_string(i, rset.stringFieldValueByName(field) or "" if format_func is None else format_func(rset.stringFieldValueByName(field)))
+SystemError: invalid column constraint_name for resultset
+
+18:12:39 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+18:12:39 [WRN][         mforms]: Resource file not found: arrow_down@2x.png
+18:13:12 [WRN][         mforms]: Resource file not found: arrow_up@2x.png
+18:13:12 [WRN][         mforms]: Resource file not found: arrow_down@2x.png

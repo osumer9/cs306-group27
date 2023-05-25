@@ -1,0 +1,248 @@
+[1, 22:36:43] CREATE OR REPLACE VIEW LITERACY_BY_YEAR
+AS 
+SELECT report_id,country_code , rate, year
+FROM literacy_reports: Running...
+[1, 22:36:43] CREATE OR REPLACE VIEW LITERACY_BY_YEAR
+AS 
+SELECT report_id,country_code , rate, year
+FROM literacy_reports: 0 row(s) affected
+[2, 22:36:44] CREATE OR REPLACE VIEW LITERACY_BY_AGE
+AS
+SELECT report_id, country_code, rate, age
+FROM literacy_reports: Running...
+[2, 22:36:44] CREATE OR REPLACE VIEW LITERACY_BY_AGE
+AS
+SELECT report_id, country_code, rate, age
+FROM literacy_reports: 0 row(s) affected
+[3, 22:36:47] CREATE OR REPLACE VIEW LITERACY_BY_GENDER
+AS
+SELECT report_id, country_code, rate, gender
+FROM literacy_reports: Running...
+[3, 22:36:47] CREATE OR REPLACE VIEW LITERACY_BY_GENDER
+AS
+SELECT report_id, country_code, rate, gender
+FROM literacy_reports: 0 row(s) affected
+[4, 22:36:48] CREATE OR REPLACE VIEW LITERACY_ANALYSIS
+AS
+SELECT COUNTRY_CODE, COUNT(REPORT_ID) REPORT_COUNT, 
+MAX(RATE) MAX_RATE, MIN(RATE) MIN_RATE, AVG(RATE) AVG_RATE
+FROM LITERACY_REPORTS
+GROUP BY COUNTRY_CODE: Running...
+[4, 22:36:48] CREATE OR REPLACE VIEW LITERACY_ANALYSIS
+AS
+SELECT COUNTRY_CODE, COUNT(REPORT_ID) REPORT_COUNT, 
+MAX(RATE) MAX_RATE, MIN(RATE) MIN_RATE, AVG(RATE) AVG_RATE
+FROM LITERACY_REPORTS
+GROUP BY COUNTRY_CODE: 0 row(s) affected
+[5, 22:36:50] CREATE OR REPLACE VIEW LIT_EXP_V
+AS
+SELECT L.report_id,L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.exp_percentage
+FROM literacy_reports AS L
+JOIN  expenditure_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): Running...
+[5, 22:36:50] CREATE OR REPLACE VIEW LIT_EXP_V
+AS
+SELECT L.report_id,L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.exp_percentage
+FROM literacy_reports AS L
+JOIN  expenditure_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): 0 row(s) affected
+[6, 22:36:51] CREATE OR REPLACE VIEW LIT_ENR_V
+AS
+SELECT L.report_id,L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.ratio RATIO
+FROM literacy_reports AS L
+JOIN  enrollment_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): Running...
+[6, 22:36:51] CREATE OR REPLACE VIEW LIT_ENR_V
+AS
+SELECT L.report_id,L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.ratio RATIO
+FROM literacy_reports AS L
+JOIN  enrollment_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): 0 row(s) affected
+[7, 22:36:53] CREATE OR REPLACE VIEW LIT_QUAL_V
+AS
+SELECT L.report_id, L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.teacher_percentage PERCENTAGE
+FROM literacy_reports AS L
+JOIN  teacher_quality_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): Running...
+[7, 22:36:53] CREATE OR REPLACE VIEW LIT_QUAL_V
+AS
+SELECT L.report_id, L.COUNTRY_CODE, L.RATE, L.YEAR, L.GENDER, L.AGE, E.teacher_percentage PERCENTAGE
+FROM literacy_reports AS L
+JOIN  teacher_quality_report AS E ON(L.country_code = E.country_code AND L.YEAR = E.YEAR): 0 row(s) affected
+[8, 22:36:57] SELECT L.age, L.country_code, AVG(L.rate) AS avg_literacy_rate, MIN(L.rate) AS min_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.age, L.country_code
+HAVING AVG(L.rate) > 0.7 AND COUNT(L.report_id) >= 10
+LIMIT 0, 10000
+: Running...
+[8, 22:36:57] SELECT L.age, L.country_code, AVG(L.rate) AS avg_literacy_rate, MIN(L.rate) AS min_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.age, L.country_code
+HAVING AVG(L.rate) > 0.7 AND COUNT(L.report_id) >= 10
+LIMIT 0, 10000
+: Fetching...
+[8, 22:36:57] SELECT L.age, L.country_code, AVG(L.rate) AS avg_literacy_rate, MIN(L.rate) AS min_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.age, L.country_code
+HAVING AVG(L.rate) > 0.7 AND COUNT(L.report_id) >= 10
+LIMIT 0, 10000
+: 60 row(s) returned
+[9, 22:36:59] SELECT L.gender,L.country_code, AVG(E.exp_percentage) AS avg_expenditure,
+MAX(L.rate) AS max_literacy_rate, MIN(L.rate) AS min_literacy_rate, AVG(L.rate) AS avg_literacy_rate, COUNT(L.report_id) AS literacy_report_count
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.gender, L.country_code
+HAVING COUNT(L.report_id) >= 5 AND AVG(L.rate) >= 90
+LIMIT 0, 10000
+: Running...
+[9, 22:36:59] SELECT L.gender,L.country_code, AVG(E.exp_percentage) AS avg_expenditure,
+MAX(L.rate) AS max_literacy_rate, MIN(L.rate) AS min_literacy_rate, AVG(L.rate) AS avg_literacy_rate, COUNT(L.report_id) AS literacy_report_count
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.gender, L.country_code
+HAVING COUNT(L.report_id) >= 5 AND AVG(L.rate) >= 90
+LIMIT 0, 10000
+: Fetching...
+[9, 22:36:59] SELECT L.gender,L.country_code, AVG(E.exp_percentage) AS avg_expenditure,
+MAX(L.rate) AS max_literacy_rate, MIN(L.rate) AS min_literacy_rate, AVG(L.rate) AS avg_literacy_rate, COUNT(L.report_id) AS literacy_report_count
+FROM literacy_reports L
+JOIN expenditure_report E ON L.country_code = E.country_code AND L.year = E.year
+GROUP BY L.gender, L.country_code
+HAVING COUNT(L.report_id) >= 5 AND AVG(L.rate) >= 90
+LIMIT 0, 10000
+: 85 row(s) returned
+[10, 22:37:00] SELECT E.country_code, AVG(L.rate) AS avg_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM expenditure_report E
+JOIN literacy_reports L ON E.country_code = L.country_code AND E.year = L.year
+JOIN enrollment_report ER ON E.country_code = ER.country_code AND E.year = ER.year
+WHERE ER.ratio > 0.9
+GROUP BY E.country_code
+HAVING COUNT(L.report_id) >= 5
+LIMIT 0, 10000
+: Running...
+[10, 22:37:00] SELECT E.country_code, AVG(L.rate) AS avg_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM expenditure_report E
+JOIN literacy_reports L ON E.country_code = L.country_code AND E.year = L.year
+JOIN enrollment_report ER ON E.country_code = ER.country_code AND E.year = ER.year
+WHERE ER.ratio > 0.9
+GROUP BY E.country_code
+HAVING COUNT(L.report_id) >= 5
+LIMIT 0, 10000
+: Fetching...
+[10, 22:37:00] SELECT E.country_code, AVG(L.rate) AS avg_literacy_rate, 
+COUNT(L.report_id) AS literacy_report_count, AVG(E.exp_percentage) AS avg_expenditure
+FROM expenditure_report E
+JOIN literacy_reports L ON E.country_code = L.country_code AND E.year = L.year
+JOIN enrollment_report ER ON E.country_code = ER.country_code AND E.year = ER.year
+WHERE ER.ratio > 0.9
+GROUP BY E.country_code
+HAVING COUNT(L.report_id) >= 5
+LIMIT 0, 10000
+: 9 row(s) returned
+[11, 22:37:05] SELECT MIN(rate), MAX(rate) FROM literacy_reports
+LIMIT 0, 10000
+: Running...
+[11, 22:37:05] SELECT MIN(rate), MAX(rate) FROM literacy_reports
+LIMIT 0, 10000
+: Fetching...
+[11, 22:37:06] SELECT MIN(rate), MAX(rate) FROM literacy_reports
+LIMIT 0, 10000
+: 1 row(s) returned
+[12, 22:37:08] DROP TRIGGER IF EXISTS fix_rate_before_insert: Running...
+[12, 22:37:08] DROP TRIGGER IF EXISTS fix_rate_before_insert: 0 row(s) affected
+[13, 22:37:09] DROP TRIGGER IF EXISTS fix_rate_before_update: Running...
+[13, 22:37:09] DROP TRIGGER IF EXISTS fix_rate_before_update: 0 row(s) affected
+[14, 22:37:32] ALTER TABLE literacy_reports ADD CONSTRAINT rate_range CHECK (rate >= 3.39 AND rate <= 100): Running...
+[14, 22:37:32] ALTER TABLE literacy_reports ADD CONSTRAINT rate_range CHECK (rate >= 3.39 AND rate <= 100): Error Code: 3822. Duplicate check constraint name 'rate_range'.
+[15, 22:37:34] INSERT INTO literacy_reports (report_id, country_code, rate, year, gender, age)
+VALUES (3351, 'TUR', 120, 2022, 'male', 'young'): Running...
+[15, 22:37:34] INSERT INTO literacy_reports (report_id, country_code, rate, year, gender, age)
+VALUES (3351, 'TUR', 120, 2022, 'male', 'young'): Error Code: 3819. Check constraint 'rate_range' is violated.
+[16, 22:37:36] CREATE TRIGGER fix_rate_before_insert
+BEFORE INSERT ON literacy_reports
+FOR EACH ROW
+BEGIN
+    IF NEW.rate > 100 THEN
+        SET NEW.rate = 100;
+    ELSEIF NEW.rate < 3.39 THEN
+        SET NEW.rate = 3.39;
+    END IF;
+END: Running...
+[16, 22:37:36] CREATE TRIGGER fix_rate_before_insert
+BEFORE INSERT ON literacy_reports
+FOR EACH ROW
+BEGIN
+    IF NEW.rate > 100 THEN
+        SET NEW.rate = 100;
+    ELSEIF NEW.rate < 3.39 THEN
+        SET NEW.rate = 3.39;
+    END IF;
+END: 0 row(s) affected
+[17, 22:37:38] CREATE TRIGGER fix_rate_before_update
+BEFORE UPDATE ON literacy_reports
+FOR EACH ROW
+BEGIN
+    IF NEW.rate > 100 THEN
+        SET NEW.rate = 100;
+    ELSEIF NEW.rate < 3.39 THEN
+        SET NEW.rate = 3.39;
+    END IF;
+END: Running...
+[17, 22:37:38] CREATE TRIGGER fix_rate_before_update
+BEFORE UPDATE ON literacy_reports
+FOR EACH ROW
+BEGIN
+    IF NEW.rate > 100 THEN
+        SET NEW.rate = 100;
+    ELSEIF NEW.rate < 3.39 THEN
+        SET NEW.rate = 3.39;
+    END IF;
+END: 0 row(s) affected
+[18, 22:37:43] INSERT INTO literacy_reports (report_id, country_code, rate, year, gender, age)
+VALUES (3351, 'TUR', 120, 2022, 'male', 'young'): Running...
+[18, 22:37:43] INSERT INTO literacy_reports (report_id, country_code, rate, year, gender, age)
+VALUES (3351, 'TUR', 120, 2022, 'male', 'young'): 1 row(s) affected
+[19, 22:37:46] SELECT * FROM literacy_reports where report_id = 3351
+LIMIT 0, 10000
+: Running...
+[19, 22:37:46] SELECT * FROM literacy_reports where report_id = 3351
+LIMIT 0, 10000
+: Fetching...
+[19, 22:37:46] SELECT * FROM literacy_reports where report_id = 3351
+LIMIT 0, 10000
+: 1 row(s) returned
+[20, 22:37:49] DELETE FROM literacy_reports WHERE report_id = 3351: Running...
+[20, 22:37:49] DELETE FROM literacy_reports WHERE report_id = 3351: 1 row(s) affected
+[21, 22:38:10] DROP PROCEDURE IF EXISTS get_lit_stats: Running...
+[21, 22:38:10] DROP PROCEDURE IF EXISTS get_lit_stats: 0 row(s) affected
+[22, 22:38:12] CREATE PROCEDURE get_lit_stats(IN iso_code VARCHAR(3))
+BEGIN
+	DECLARE code_exists INT DEFAULT 0;
+    SELECT COUNT(*) INTO code_exists FROM literacy_reports WHERE country_code = iso_code;
+    IF code_exists > 0 THEN
+        SELECT * FROM literacy_reports WHERE country_code = iso_code;
+    ELSE
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Country code does not exist in the literacy_reports table.';
+    END IF;
+END: Running...
+[22, 22:38:12] CREATE PROCEDURE get_lit_stats(IN iso_code VARCHAR(3))
+BEGIN
+	DECLARE code_exists INT DEFAULT 0;
+    SELECT COUNT(*) INTO code_exists FROM literacy_reports WHERE country_code = iso_code;
+    IF code_exists > 0 THEN
+        SELECT * FROM literacy_reports WHERE country_code = iso_code;
+    ELSE
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Country code does not exist in the literacy_reports table.';
+    END IF;
+END: 0 row(s) affected
+[23, 22:38:13] CALL get_lit_stats('TUR'): Running...
+[23, 22:38:13] CALL get_lit_stats('TUR'): Fetching...
+[23, 22:38:13] CALL get_lit_stats('TUR'): 66 row(s) returned
+[24, 22:38:15] CALL get_lit_stats('AFG'): Running...
+[24, 22:38:15] CALL get_lit_stats('AFG'): Fetching...
+[24, 22:38:15] CALL get_lit_stats('AFG'): 10 row(s) returned
+[25, 22:38:16] CALL get_lit_stats('TDR'): Running...
+[25, 22:38:16] CALL get_lit_stats('TDR'): Error Code: 1644. Country code does not exist in the literacy_reports table.

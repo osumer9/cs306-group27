@@ -1,0 +1,642 @@
+[1, 20:41:07] show databases: Running...
+[1, 20:41:07] show databases: Fetching...
+[1, 20:41:07] show databases: 4 row(s) returned
+[1, 20:41:51] show databases: Running...
+[1, 20:41:51] show databases: Fetching...
+[1, 20:41:51] show databases: 4 row(s) returned
+[1, 20:51:14] Create Table country(
+	country_name Varchar(50),
+    country_code Varchar(5) Not Null,
+    year INT,
+    population INT,
+    primary key (country_name)
+): Running...
+[1, 20:51:14] Create Table country(
+	country_name Varchar(50),
+    country_code Varchar(5) Not Null,
+    year INT,
+    population INT,
+    primary key (country_name)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[2, 20:54:27] Apply changes to country: Applying object changes ...
+[2, 20:54:40] Apply changes to country: 
+[3, 20:55:49] Apply changes to country: Applying object changes ...
+[3, 20:56:04] Applying changes to country...: 
+[3, 20:56:40] Apply changes to country: Error 1115: Unknown character set: 'DEFAULT'
+SQL Statement:
+CREATE TABLE `sys`.`country` (
+  `country_name` VARCHAR(50) NULL,
+  `country_code` VARCHAR(5) CHARACTER SET 'DEFAULT' NOT NULL,
+  `year` INT NULL,
+  `population` INT NULL,
+  PRIMARY KEY (`country_code`))
+
+
+[4, 20:56:42] Apply changes to country: Applying object changes ...
+[4, 20:57:17] Apply changes to country: 
+[5, 20:57:35] Apply changes to country: Applying object changes ...
+[5, 20:57:46] Applying changes to country...: 
+[5, 20:57:46] : Changes applied to country
+[5, 20:57:49] Apply changes to country: Changes applied
+[6, 20:58:23] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[6, 20:58:23] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[6, 20:58:23] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 0 row(s) returned
+[1, 20:59:19] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[1, 20:59:19] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[1, 20:59:19] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 0 row(s) returned
+[1, 20:59:43] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Running...
+[1, 20:59:43] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Fetching...
+[1, 20:59:43] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: 6 row(s) returned
+[1, 21:02:24] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[1, 21:02:24] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[1, 21:02:24] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 0 row(s) returned
+[2, 21:02:28] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Running...
+[2, 21:02:28] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Fetching...
+[2, 21:02:28] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: 6 row(s) returned
+[3, 21:02:31] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[3, 21:02:31] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[3, 21:02:31] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 0 row(s) returned
+[4, 21:38:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[4, 21:38:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[5, 21:38:38] SHOW DATABASES: Executing 
+[5, 21:38:38] SHOW DATABASES: OK
+[6, 21:38:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 21:38:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 21:38:51] SHOW COLUMNS FROM `sys`.`country`: Executing 
+[7, 21:38:51] SHOW COLUMNS FROM `sys`.`country`: OK
+[8, 21:40:10] PREPARE stmt FROM 'INSERT INTO `sys`.`country` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': Executing 
+[8, 21:40:10] PREPARE stmt FROM 'INSERT INTO `sys`.`country` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': OK
+[9, 21:40:15] DEALLOCATE PREPARE stmt: Executing 
+[9, 21:40:15] DEALLOCATE PREPARE stmt: OK
+[10, 21:40:34] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[10, 21:40:34] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[10, 21:40:34] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[11, 22:14:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[11, 22:14:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[12, 22:14:25] SHOW DATABASES: Executing 
+[12, 22:14:25] SHOW DATABASES: OK
+[13, 22:14:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[13, 22:14:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[14, 22:14:34] SHOW TABLES FROM `` like 'enrollment': Executing 
+[14, 22:14:34] SHOW TABLES FROM `` like 'enrollment': Error Code: 1102
+Incorrect database name ''
+[15, 22:15:53] Apply changes to enrollment: Applying object changes ...
+[15, 22:16:04] Applying changes to enrollment...: 
+[15, 22:16:04] : Changes applied to enrollment
+[15, 22:16:05] Apply changes to enrollment: Changes applied
+[16, 22:16:08] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Running...
+[16, 22:16:08] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Fetching...
+[16, 22:16:08] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: 0 row(s) returned
+[17, 22:16:10] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[17, 22:16:10] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[17, 22:16:10] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[18, 22:16:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[18, 22:16:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[19, 22:16:16] SHOW DATABASES: Executing 
+[19, 22:16:16] SHOW DATABASES: OK
+[20, 22:16:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[20, 22:16:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[21, 22:16:18] SHOW COLUMNS FROM `sys`.`enrollment`: Executing 
+[21, 22:16:18] SHOW COLUMNS FROM `sys`.`enrollment`: OK
+[22, 22:18:13] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[22, 22:18:13] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[23, 22:18:13] SHOW DATABASES: Executing 
+[23, 22:18:13] SHOW DATABASES: OK
+[24, 22:18:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[24, 22:18:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[25, 22:18:16] SHOW COLUMNS FROM `sys`.`enrollment`: Executing 
+[25, 22:18:16] SHOW COLUMNS FROM `sys`.`enrollment`: OK
+[26, 22:18:23] PREPARE stmt FROM 'INSERT INTO `sys`.`enrollment` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': Executing 
+[26, 22:18:23] PREPARE stmt FROM 'INSERT INTO `sys`.`enrollment` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': OK
+[27, 22:18:23] DEALLOCATE PREPARE stmt: Executing 
+[27, 22:18:23] DEALLOCATE PREPARE stmt: OK
+[28, 22:19:05] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Running...
+[28, 22:19:05] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Fetching...
+[28, 22:19:05] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[29, 22:20:23] Apply changes to teacher: Applying object changes ...
+[29, 22:20:25] Applying changes to teacher...: 
+[29, 22:20:25] : Changes applied to teacher
+[29, 22:20:26] Apply changes to teacher: Changes applied
+[30, 22:20:33] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Running...
+[30, 22:20:33] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Fetching...
+[30, 22:20:33] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: 0 row(s) returned
+[31, 22:20:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[31, 22:20:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[32, 22:20:45] SHOW DATABASES: Executing 
+[32, 22:20:45] SHOW DATABASES: OK
+[33, 22:20:47] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[33, 22:20:47] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[34, 22:20:47] SHOW COLUMNS FROM `sys`.`teacher`: Executing 
+[34, 22:20:47] SHOW COLUMNS FROM `sys`.`teacher`: OK
+[35, 22:21:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[35, 22:21:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[36, 22:21:40] SHOW DATABASES: Executing 
+[36, 22:21:40] SHOW DATABASES: OK
+[37, 22:21:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[37, 22:21:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[38, 22:21:43] SHOW COLUMNS FROM `sys`.`teacher`: Executing 
+[38, 22:21:43] SHOW COLUMNS FROM `sys`.`teacher`: OK
+[39, 22:21:50] PREPARE stmt FROM 'INSERT INTO `sys`.`teacher` (`quality`,`country_code`,`per`,`year`) VALUES(?,?,?,?)': Executing 
+[39, 22:21:50] PREPARE stmt FROM 'INSERT INTO `sys`.`teacher` (`quality`,`country_code`,`per`,`year`) VALUES(?,?,?,?)': OK
+[40, 22:21:50] DEALLOCATE PREPARE stmt: Executing 
+[40, 22:21:50] DEALLOCATE PREPARE stmt: OK
+[41, 22:21:54] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Running...
+[41, 22:21:54] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Fetching...
+[41, 22:21:54] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: 132 row(s) returned
+[42, 22:31:20] Apply changes to expenditures: Applying object changes ...
+[42, 22:31:21] Applying changes to expenditures...: 
+[42, 22:31:21] : Changes applied to expenditures
+[42, 22:31:22] Apply changes to expenditures: Changes applied
+[43, 22:31:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[43, 22:31:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[44, 22:31:55] SHOW DATABASES: Executing 
+[44, 22:31:55] SHOW DATABASES: OK
+[45, 22:31:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[45, 22:31:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[46, 22:31:58] SHOW COLUMNS FROM `sys`.`expenditures`: Executing 
+[46, 22:31:58] SHOW COLUMNS FROM `sys`.`expenditures`: OK
+[47, 22:32:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 22:32:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 22:32:16] SHOW DATABASES: Executing 
+[48, 22:32:16] SHOW DATABASES: OK
+[49, 22:32:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[49, 22:32:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[50, 22:32:19] SHOW COLUMNS FROM `sys`.`expenditures`: Executing 
+[50, 22:32:19] SHOW COLUMNS FROM `sys`.`expenditures`: OK
+[51, 22:32:53] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[51, 22:32:53] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[52, 22:32:53] SHOW DATABASES: Executing 
+[52, 22:32:53] SHOW DATABASES: OK
+[53, 22:32:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[53, 22:32:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[54, 22:32:55] SHOW COLUMNS FROM `sys`.`expenditures`: Executing 
+[54, 22:32:55] SHOW COLUMNS FROM `sys`.`expenditures`: OK
+[55, 22:33:05] PREPARE stmt FROM 'INSERT INTO `sys`.`expenditures` (`id_expenditures`,`year`,`percentage`,`country_code`) VALUES(?,?,?,?)': Executing 
+[55, 22:33:05] PREPARE stmt FROM 'INSERT INTO `sys`.`expenditures` (`id_expenditures`,`year`,`percentage`,`country_code`) VALUES(?,?,?,?)': OK
+[56, 22:33:08] DEALLOCATE PREPARE stmt: Executing 
+[56, 22:33:08] DEALLOCATE PREPARE stmt: OK
+[57, 22:33:12] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Running...
+[57, 22:33:12] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Fetching...
+[57, 22:33:12] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[58, 22:35:18] Apply changes to literacy: Applying object changes ...
+[58, 22:35:20] Applying changes to literacy...: 
+[58, 22:35:20] : Changes applied to literacy
+[58, 22:35:21] Apply changes to literacy: Changes applied
+[59, 22:35:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[59, 22:35:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[60, 22:35:36] SHOW DATABASES: Executing 
+[60, 22:35:36] SHOW DATABASES: OK
+[61, 22:35:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[61, 22:35:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[62, 22:35:39] SHOW COLUMNS FROM `sys`.`literacy`: Executing 
+[62, 22:35:39] SHOW COLUMNS FROM `sys`.`literacy`: OK
+[63, 22:36:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[63, 22:36:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[64, 22:36:05] SHOW DATABASES: Executing 
+[64, 22:36:05] SHOW DATABASES: OK
+[65, 22:36:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[65, 22:36:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[66, 22:36:07] SHOW COLUMNS FROM `sys`.`literacy`: Executing 
+[66, 22:36:07] SHOW COLUMNS FROM `sys`.`literacy`: OK
+[67, 22:36:26] PREPARE stmt FROM 'INSERT INTO `sys`.`literacy` (`id_report`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': Executing 
+[67, 22:36:26] PREPARE stmt FROM 'INSERT INTO `sys`.`literacy` (`id_report`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': OK
+[68, 22:36:30] DEALLOCATE PREPARE stmt: Executing 
+[68, 22:36:30] DEALLOCATE PREPARE stmt: OK
+[69, 22:36:35] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: Running...
+[69, 22:36:35] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: Fetching...
+[69, 22:36:35] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: 1000 row(s) returned
+[70, 22:38:28] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[70, 22:38:28] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[70, 22:38:28] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[71, 22:42:35] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Running...
+[71, 22:42:35] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Fetching...
+[71, 22:42:35] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[72, 22:43:03] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[72, 22:43:03] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[73, 22:44:16] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[73, 22:44:16] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[74, 22:44:27] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[74, 22:44:27] SELECT * FROM enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[75, 22:44:37] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[75, 22:44:37] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[75, 22:44:37] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[76, 22:45:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[76, 22:45:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[76, 22:45:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[77, 22:45:08] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[77, 22:45:08] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[77, 22:45:08] SELECT * FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[78, 22:45:15] SELECT E.year FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[78, 22:45:15] SELECT E.year FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[78, 22:45:15] SELECT E.year FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[79, 22:45:21] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[79, 22:45:21] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[79, 22:45:21] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[80, 22:45:24] SELECT E.enr_i FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[80, 22:45:24] SELECT E.enr_i FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Error Code: 1054. Unknown column 'E.enr_i' in 'field list'
+[81, 22:45:26] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[81, 22:45:26] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[81, 22:45:26] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[82, 22:45:37] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[82, 22:45:37] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[82, 22:45:37] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[83, 22:46:04] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Running...
+[83, 22:46:04] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Fetching...
+[83, 22:46:04] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[84, 22:55:57] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=93
+LIMIT 0, 1000
+: Running...
+[84, 22:55:57] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=93
+LIMIT 0, 1000
+: Fetching...
+[84, 22:55:57] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=93
+LIMIT 0, 1000
+: 1 row(s) returned
+[85, 22:56:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=90
+LIMIT 0, 1000
+: Running...
+[85, 22:56:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=90
+LIMIT 0, 1000
+: Fetching...
+[85, 22:56:02] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=90
+LIMIT 0, 1000
+: 0 row(s) returned
+[86, 22:56:06] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=100
+LIMIT 0, 1000
+: Running...
+[86, 22:56:06] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=100
+LIMIT 0, 1000
+: Fetching...
+[86, 22:56:06] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=100
+LIMIT 0, 1000
+: 152 row(s) returned
+[87, 22:56:13] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=1
+LIMIT 0, 1000
+: Running...
+[87, 22:56:13] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=1
+LIMIT 0, 1000
+: Fetching...
+[87, 22:56:13] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=1
+LIMIT 0, 1000
+: 0 row(s) returned
+[88, 22:56:16] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Running...
+[88, 22:56:16] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: Fetching...
+[88, 22:56:16] SELECT E.enr_id FROM sys.enrollment E WHERE E.ratio=98
+LIMIT 0, 1000
+: 8 row(s) returned
+[1, 16:39:47] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Running...
+[1, 16:39:47] SELECT * FROM sys.country
+LIMIT 0, 1000
+: Fetching...
+[1, 16:39:47] SELECT * FROM sys.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[2, 16:39:47] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Running...
+[2, 16:39:47] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: Fetching...
+[2, 16:39:47] SELECT * FROM sys.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[3, 16:39:48] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Running...
+[3, 16:39:48] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: Fetching...
+[3, 16:39:48] SELECT * FROM sys.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[4, 16:39:49] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: Running...
+[4, 16:39:49] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: Fetching...
+[4, 16:39:49] SELECT * FROM sys.literacy
+LIMIT 0, 1000
+: 1000 row(s) returned
+[5, 16:39:50] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Running...
+[5, 16:39:50] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: Fetching...
+[5, 16:39:50] SELECT * FROM sys.teacher
+LIMIT 0, 1000
+: 132 row(s) returned
+[1, 19:03:14] Apply changes to country_table: Applying object changes ...
+[1, 19:03:31] Applying changes to country_table...: 
+[1, 19:03:31] : Changes applied to country_table
+[1, 19:03:32] Apply changes to country_table: Changes applied
+[2, 19:03:37] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Running...
+[2, 19:03:37] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Fetching...
+[2, 19:03:37] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: 0 row(s) returned
+[3, 19:04:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 19:04:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 19:04:03] SHOW DATABASES: Executing 
+[4, 19:04:03] SHOW DATABASES: OK
+[5, 19:04:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[5, 19:04:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[6, 19:04:07] SHOW COLUMNS FROM `sys`.`country_table`: Executing 
+[6, 19:04:07] SHOW COLUMNS FROM `sys`.`country_table`: OK
+[7, 19:04:12] PREPARE stmt FROM 'INSERT INTO `sys`.`country_table` (`country_name`,`country_code`) VALUES(?,?)': Executing 
+[7, 19:04:12] PREPARE stmt FROM 'INSERT INTO `sys`.`country_table` (`country_name`,`country_code`) VALUES(?,?)': OK
+[8, 19:04:12] DEALLOCATE PREPARE stmt: Executing 
+[8, 19:04:12] DEALLOCATE PREPARE stmt: OK
+[9, 19:04:18] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Running...
+[9, 19:04:18] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Fetching...
+[9, 19:04:18] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: 201 row(s) returned
+[10, 19:05:32] Apply changes to enrollment_table: Applying object changes ...
+[10, 19:05:46] Applying changes to enrollment_table...: 
+[10, 19:05:46] : Changes applied to enrollment_table
+[10, 19:05:48] Apply changes to enrollment_table: Changes applied
+[11, 19:06:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[11, 19:06:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[12, 19:06:04] SHOW DATABASES: Executing 
+[12, 19:06:04] SHOW DATABASES: OK
+[13, 19:06:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[13, 19:06:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[14, 19:06:07] SHOW COLUMNS FROM `sys`.`enrollment_table`: Executing 
+[14, 19:06:07] SHOW COLUMNS FROM `sys`.`enrollment_table`: OK
+[15, 19:06:12] PREPARE stmt FROM 'INSERT INTO `sys`.`enrollment_table` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': Executing 
+[15, 19:06:12] PREPARE stmt FROM 'INSERT INTO `sys`.`enrollment_table` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': OK
+[16, 19:06:12] DEALLOCATE PREPARE stmt: Executing 
+[16, 19:06:12] DEALLOCATE PREPARE stmt: OK
+[17, 19:07:19] Apply changes to expenditures_table: Applying object changes ...
+[17, 19:07:22] Applying changes to expenditures_table...: 
+[17, 19:07:22] : Changes applied to expenditures_table
+[17, 19:07:23] Apply changes to expenditures_table: Changes applied
+[18, 19:07:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[18, 19:07:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[19, 19:07:34] SHOW DATABASES: Executing 
+[19, 19:07:34] SHOW DATABASES: OK
+[20, 19:07:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[20, 19:07:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[21, 19:07:40] SHOW COLUMNS FROM `sys`.`expenditures_table`: Executing 
+[21, 19:07:40] SHOW COLUMNS FROM `sys`.`expenditures_table`: OK
+[22, 19:07:50] PREPARE stmt FROM 'INSERT INTO `sys`.`expenditures_table` (`exp_id`,`year`,`exp_percentage`,`country_code`) VALUES(?,?,?,?)': Executing 
+[22, 19:07:50] PREPARE stmt FROM 'INSERT INTO `sys`.`expenditures_table` (`exp_id`,`year`,`exp_percentage`,`country_code`) VALUES(?,?,?,?)': OK
+[23, 19:07:52] DEALLOCATE PREPARE stmt: Executing 
+[23, 19:07:52] DEALLOCATE PREPARE stmt: OK
+[24, 19:12:16] Apply changes to literacy_table: Applying object changes ...
+[24, 19:12:17] Applying changes to literacy_table...: 
+[24, 19:12:17] : Changes applied to literacy_table
+[24, 19:12:19] Apply changes to literacy_table: Changes applied
+[25, 19:12:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[25, 19:12:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[26, 19:12:31] SHOW DATABASES: Executing 
+[26, 19:12:31] SHOW DATABASES: OK
+[27, 19:12:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[27, 19:12:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[28, 19:12:34] SHOW COLUMNS FROM `sys`.`literacy_table`: Executing 
+[28, 19:12:34] SHOW COLUMNS FROM `sys`.`literacy_table`: OK
+[29, 19:12:44] PREPARE stmt FROM 'INSERT INTO `sys`.`literacy_table` (`report_id`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': Executing 
+[29, 19:12:44] PREPARE stmt FROM 'INSERT INTO `sys`.`literacy_table` (`report_id`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': OK
+[30, 19:12:48] DEALLOCATE PREPARE stmt: Executing 
+[30, 19:12:48] DEALLOCATE PREPARE stmt: OK
+[31, 19:13:55] Apply changes to teacher_table: Applying object changes ...
+[31, 19:13:56] Applying changes to teacher_table...: 
+[31, 19:13:56] : Changes applied to teacher_table
+[31, 19:13:57] Apply changes to teacher_table: Changes applied
+[32, 19:14:09] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[32, 19:14:09] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[33, 19:14:09] SHOW DATABASES: Executing 
+[33, 19:14:09] SHOW DATABASES: OK
+[34, 19:14:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[34, 19:14:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[35, 19:14:12] SHOW COLUMNS FROM `sys`.`teacher_table`: Executing 
+[35, 19:14:12] SHOW COLUMNS FROM `sys`.`teacher_table`: OK
+[36, 19:14:16] PREPARE stmt FROM 'INSERT INTO `sys`.`teacher_table` (`quality_id`,`country_code`,`percentage`,`year`) VALUES(?,?,?,?)': Executing 
+[36, 19:14:16] PREPARE stmt FROM 'INSERT INTO `sys`.`teacher_table` (`quality_id`,`country_code`,`percentage`,`year`) VALUES(?,?,?,?)': OK
+[37, 19:14:16] DEALLOCATE PREPARE stmt: Executing 
+[37, 19:14:16] DEALLOCATE PREPARE stmt: OK
+[38, 19:14:25] SELECT * FROM sys.teacher_table
+LIMIT 0, 1000
+: Running...
+[38, 19:14:25] SELECT * FROM sys.teacher_table
+LIMIT 0, 1000
+: Fetching...
+[38, 19:14:25] SELECT * FROM sys.teacher_table
+LIMIT 0, 1000
+: 132 row(s) returned
+[39, 19:14:28] SELECT * FROM sys.literacy_table
+LIMIT 0, 1000
+: Running...
+[39, 19:14:28] SELECT * FROM sys.literacy_table
+LIMIT 0, 1000
+: Fetching...
+[39, 19:14:28] SELECT * FROM sys.literacy_table
+LIMIT 0, 1000
+: 1000 row(s) returned
+[40, 19:14:30] SELECT * FROM sys.expenditures_table
+LIMIT 0, 1000
+: Running...
+[40, 19:14:30] SELECT * FROM sys.expenditures_table
+LIMIT 0, 1000
+: Fetching...
+[40, 19:14:30] SELECT * FROM sys.expenditures_table
+LIMIT 0, 1000
+: 1000 row(s) returned
+[41, 19:14:33] SELECT * FROM sys.enrollment_table
+LIMIT 0, 1000
+: Running...
+[41, 19:14:33] SELECT * FROM sys.enrollment_table
+LIMIT 0, 1000
+: Fetching...
+[41, 19:14:33] SELECT * FROM sys.enrollment_table
+LIMIT 0, 1000
+: 333 row(s) returned
+[42, 19:14:34] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Running...
+[42, 19:14:34] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: Fetching...
+[42, 19:14:34] SELECT * FROM sys.country_table
+LIMIT 0, 1000
+: 201 row(s) returned

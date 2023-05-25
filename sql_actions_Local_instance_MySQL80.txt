@@ -1,0 +1,1879 @@
+[1, 12:07:17] show databases: Running...
+[1, 12:07:17] show databases: Fetching...
+[1, 12:07:17] show databases: 4 row(s) returned
+[1, 16:00:11] select all from tables: Running...
+[1, 16:00:11] select all from tables: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from tables' at line 1
+[2, 16:00:16] select all FROM tables: Running...
+[2, 16:00:16] select all FROM tables: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM tables' at line 1
+[3, 16:00:37] show all tables: Running...
+[3, 16:00:37] show all tables: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all tables' at line 1
+[4, 16:00:39] show tables: Running...
+[4, 16:00:39] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[5, 16:00:40] show tables: Running...
+[5, 16:00:40] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[6, 16:01:49] create DATABASE test: Running...
+[6, 16:01:49] create DATABASE test: 1 row(s) affected
+[7, 16:02:48] d DATABASE test: Running...
+[7, 16:02:48] d DATABASE test: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'd DATABASE test' at line 1
+[8, 16:02:49] drop DATABASE test: Running...
+[8, 16:02:49] drop DATABASE test: 0 row(s) affected
+[9, 16:03:12] CREATE DATABASE CS306: Running...
+[9, 16:03:12] CREATE DATABASE CS306: 1 row(s) affected
+[10, 16:04:26] use cs306: Running...
+[10, 16:04:26] use cs306: 0 row(s) affected
+[11, 16:04:44] create table a: Running...
+[11, 16:04:44] create table a: Error Code: 4028. A table must have at least one visible column.
+[12, 16:04:50] drop table a: Running...
+[12, 16:04:50] drop table a: Error Code: 1051. Unknown table 'cs306.a'
+[13, 16:09:59] CREATE TABLE continents(
+	continent_code VARCHAR(255) NOT NULL,
+	continent_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (continent_code)
+): Running...
+[13, 16:09:59] CREATE TABLE continents(
+	continent_code VARCHAR(255) NOT NULL,
+	continent_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (continent_code)
+): 0 row(s) affected
+[14, 16:11:19] CREATE TABLE continents(
+	country_code VARCHAR(255) NOT NULL,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): Running...
+[14, 16:11:19] CREATE TABLE continents(
+	country_code VARCHAR(255) NOT NULL,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): Error Code: 1050. Table 'continents' already exists
+[15, 16:11:38] CREATE TABLE countries(
+	country_code VARCHAR(255) NOT NULL,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): Running...
+[15, 16:11:38] CREATE TABLE countries(
+	country_code VARCHAR(255) NOT NULL,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): 0 row(s) affected
+[16, 16:12:47] CREATE TABLE literacy_reports(
+	report_id INT NOT NULL auto_,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): Running...
+[16, 16:12:47] CREATE TABLE literacy_reports(
+	report_id INT NOT NULL auto_,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY (country_code)
+    ): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'auto_,
+	country_name VARCHAR(255) NOT NULL,
+    population INT,
+    PRIMARY KEY ' at line 2
+[17, 16:18:08] CREATE TABLE literacy_reports(
+	report_id INT NOT NULL auto_increment,
+	rate DECIMAL NOT NULL,
+    age INT NOT NULL,
+    gender boolean NOT NULL,
+    PRIMARY KEY (report_id)
+    ): Running...
+[17, 16:18:08] CREATE TABLE literacy_reports(
+	report_id INT NOT NULL auto_increment,
+	rate DECIMAL NOT NULL,
+    age INT NOT NULL,
+    gender boolean NOT NULL,
+    PRIMARY KEY (report_id)
+    ): 0 row(s) affected
+[18, 16:44:47] CREATE TABLE teachers(
+	teacher_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    percentage REAL,
+    PRIMARY KEY (teacher_id)
+    ): Running...
+[18, 16:44:47] CREATE TABLE teachers(
+	teacher_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    percentage REAL,
+    PRIMARY KEY (teacher_id)
+    ): 0 row(s) affected
+[19, 16:45:04] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Running...
+[19, 16:45:04] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_co' at line 2
+[20, 16:45:15] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Running...
+[20, 16:45:15] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_co' at line 2
+[21, 16:45:15] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Running...
+[21, 16:45:15] Drop table literacy_reports
+CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_co' at line 2
+[22, 16:45:33] Drop table literacy_reports: Running...
+[22, 16:45:33] Drop table literacy_reports: 0 row(s) affected
+[23, 16:45:35] CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): Running...
+[23, 16:45:35] CREATE TABLE literacy_reports(
+	report_id INTEGER auto_increment,
+    country_code VARCHAR(3),
+    rate REAL,
+    year INTEGER,
+    gender BOOLEAN,
+    age BOOLEAN,
+    PRIMARY KEY (report_id)
+    ): 0 row(s) affected
+[24, 16:49:44] Apply changes to countries: Applying object changes ...
+[24, 16:49:47] Applying changes to countries...: 
+[24, 16:49:47] : Changes applied to countries
+[24, 16:49:48] Apply changes to countries: Changes applied
+[25, 16:49:56] Apply changes to countries: Applying object changes ...
+[25, 16:49:58] Applying changes to countries...: 
+[25, 16:49:58] : Changes applied to countries
+[25, 16:49:59] Apply changes to countries: Changes applied
+[26, 16:52:04] create table expenditures(
+	exp_id INT auto_increment,
+    year INT,
+    country_code VARCHAR(3),
+    expenditure REAL,
+    PRIMARY KEY(exp_id)
+
+): Running...
+[26, 16:52:04] create table expenditures(
+	exp_id INT auto_increment,
+    year INT,
+    country_code VARCHAR(3),
+    expenditure REAL,
+    PRIMARY KEY(exp_id)
+
+): 0 row(s) affected
+[27, 16:52:48] create table enrollment(
+	enr_id INT auto_increment,
+    year INT,
+    country_code VARCHAR(3),
+    ratio REAL,
+    PRIMARY KEY(enr_id)
+
+): Running...
+[27, 16:52:48] create table enrollment(
+	enr_id INT auto_increment,
+    year INT,
+    country_code VARCHAR(3),
+    ratio REAL,
+    PRIMARY KEY(enr_id)
+
+): 0 row(s) affected
+[28, 17:21:03] Apply changes to teacher_quality: Applying object changes ...
+[28, 17:21:08] Applying changes to teacher_quality...: 
+[28, 17:21:08] : Changes applied to teacher_quality
+[28, 17:21:10] Apply changes to teacher_quality: Changes applied
+[29, 17:23:43] drop table teacher_quality: Running...
+[29, 17:23:43] drop table teacher_quality: 0 row(s) affected
+[30, 17:23:44] create table teacher_quality(
+quality_id INT auto_increment,
+country_code, VARCHAR(3),
+percentage, REAL,
+PRIMARY KEY(quality_id)
+): Running...
+[30, 17:23:44] create table teacher_quality(
+quality_id INT auto_increment,
+country_code, VARCHAR(3),
+percentage, REAL,
+PRIMARY KEY(quality_id)
+): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', VARCHAR(3),
+percentage, REAL,
+PRIMARY KEY(quality_id)
+)' at line 3
+[31, 17:24:06] create table teacher_quality(
+quality_id INT auto_increment,
+country_code, VARCHAR(3),
+percentage REAL,
+PRIMARY KEY(quality_id)
+): Running...
+[31, 17:24:06] create table teacher_quality(
+quality_id INT auto_increment,
+country_code, VARCHAR(3),
+percentage REAL,
+PRIMARY KEY(quality_id)
+): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', VARCHAR(3),
+percentage REAL,
+PRIMARY KEY(quality_id)
+)' at line 3
+[32, 17:24:11] create table teacher_quality(
+quality_id INT auto_increment,
+country_code VARCHAR(3),
+percentage REAL,
+PRIMARY KEY(quality_id)
+): Running...
+[32, 17:24:11] create table teacher_quality(
+quality_id INT auto_increment,
+country_code VARCHAR(3),
+percentage REAL,
+PRIMARY KEY(quality_id)
+): 0 row(s) affected
+[33, 17:24:44] drop table teacher_quality: Running...
+[33, 17:24:44] drop table teacher_quality: 0 row(s) affected
+[34, 17:24:45] drop table teacher_quality: Running...
+[34, 17:24:45] drop table teacher_quality: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[35, 17:24:47] create table teacher_quality(
+quality_id INT auto_increment,
+country_code VARCHAR(3),
+percentage REAL,
+year INT,
+PRIMARY KEY(quality_id)
+): Running...
+[35, 17:24:47] create table teacher_quality(
+quality_id INT auto_increment,
+country_code VARCHAR(3),
+percentage REAL,
+year INT,
+PRIMARY KEY(quality_id)
+): 0 row(s) affected
+[36, 17:39:09] Apply changes to Continents: Applying object changes ...
+[36, 17:39:17] Apply changes to Continents: No changes detected
+[37, 17:39:58] create table reports(
+report_id INT,
+country_code varchar(3),
+year INT,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Running...
+[37, 17:39:58] create table reports(
+report_id INT,
+country_code varchar(3),
+year INT,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[38, 17:41:20] create table reports(
+
+report_id INT,
+country_code varchar(3),
+year INT,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Running...
+[38, 17:41:20] create table reports(
+
+report_id INT,
+country_code varchar(3),
+year INT,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[39, 17:42:17] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Running...
+[39, 17:42:17] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[40, 17:42:37] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES Literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES Countries
+
+): Running...
+[40, 17:42:37] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES Literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES Countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[41, 17:44:26] Apply changes to expenditures: Applying object changes ...
+[41, 17:44:31] Applying changes to expenditures...: 
+[41, 17:44:31] : Changes applied to expenditures
+[41, 17:44:32] Apply changes to expenditures: Changes applied
+[42, 17:44:40] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Running...
+[42, 17:44:40] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id)
+	REFERENCES literacy_reports,
+FOREIGN KEY (country_code)
+	REFERENCES countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[43, 17:51:06] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id) REFERENCES literacy_reports,
+FOREIGN KEY (country_code) REFERENCES countries
+
+): Running...
+[43, 17:51:06] create table reports(
+
+report_id int,
+country_code varchar(3),
+year int,
+
+PRIMARY KEY (report_id, country_code),
+FOREIGN KEY (report_id) REFERENCES literacy_reports,
+FOREIGN KEY (country_code) REFERENCES countries
+
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[44, 17:59:46] Apply changes to continents: Applying object changes ...
+[44, 17:59:53] Applying changes to continents...: 
+[44, 17:59:53] : Changes applied to continents
+[44, 17:59:54] Apply changes to continents: Changes applied
+[45, 18:00:00] Apply changes to continents: Applying object changes ...
+[45, 18:00:01] Applying changes to continents...: 
+[45, 18:00:05] Apply changes to continents: Error 1171: All parts of a PRIMARY KEY must be NOT NULL; if you need NULL in a key, use UNIQUE instead
+SQL Statement:
+ALTER TABLE `cs306`.`continents` 
+CHANGE COLUMN `continent_code` `continent_code` VARCHAR(3) NULL ,
+CHANGE COLUMN `continent_name` `continent_name` VARCHAR(50) NULL 
+
+
+[46, 18:00:09] Apply changes to continents: Applying object changes ...
+[46, 18:00:10] Applying changes to continents...: 
+[46, 18:00:10] : Changes applied to continents
+[46, 18:00:11] Apply changes to continents: Changes applied
+[47, 18:00:47] Apply changes to countries: Applying object changes ...
+[47, 18:00:50] Applying changes to countries...: 
+[47, 18:00:50] : Changes applied to countries
+[47, 18:00:51] Apply changes to countries: Changes applied
+[48, 18:02:36] drop table countries: Running...
+[48, 18:02:36] drop table countries: 0 row(s) affected
+[49, 18:02:37] CREATE TABLE countries(
+country_code VARCHAR(3),
+country_name VARCHAR(50),
+population INT,
+PRIMARY KEY (country_code)
+
+): Running...
+[49, 18:02:37] CREATE TABLE countries(
+country_code VARCHAR(3),
+country_name VARCHAR(50),
+population INT,
+PRIMARY KEY (country_code)
+
+): 0 row(s) affected
+[50, 18:18:25] DROP TABLE expenditures: Running...
+[50, 18:18:25] DROP TABLE expenditures: 0 row(s) affected
+[51, 18:18:26] create table expenditures(
+exp_id INT,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Running...
+[51, 18:18:26] create table expenditures(
+exp_id INT,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 7
+[52, 18:18:48] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Running...
+[52, 18:18:48] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 7
+[53, 18:19:04] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Running...
+[53, 18:19:04] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY exp_id
+): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 7
+[54, 18:19:27] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY (exp_id)
+): Running...
+[54, 18:19:27] create table expenditures(
+exp_id int,
+year int,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY (exp_id)
+): 0 row(s) affected
+[55, 18:22:26] drop table expenditures: Running...
+[55, 18:22:26] drop table expenditures: 0 row(s) affected
+[56, 18:22:27] create table expenditures(
+exp_id INT auto_increment,
+year INT,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY (exp_id)
+): Running...
+[56, 18:22:27] create table expenditures(
+exp_id INT auto_increment,
+year INT,
+exp_percentage REAL,
+country_code VARCHAR(3),
+PRIMARY KEY (exp_id)
+): 0 row(s) affected
+[57, 18:24:08] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Running...
+[57, 18:24:08] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Fetching...
+[57, 18:24:08] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: 0 row(s) returned
+[58, 18:40:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[58, 18:40:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[59, 18:40:07] SHOW DATABASES: Executing 
+[59, 18:40:07] SHOW DATABASES: OK
+[60, 18:40:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[60, 18:40:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[61, 18:40:26] SHOW TABLES FROM `cs306` like 'expenditure_share': Executing 
+[61, 18:40:26] SHOW TABLES FROM `cs306` like 'expenditure_share': OK
+[62, 18:41:06]  CREATE TABLE `cs306`.`expenditure_share` (`Entity` text, `Code` text, `Year` int, `Government expenditure on education, total (% of government expenditure)` double): Executing 
+[62, 18:41:06]  CREATE TABLE `cs306`.`expenditure_share` (`Entity` text, `Code` text, `Year` int, `Government expenditure on education, total (% of government expenditure)` double): Error Code: 1059
+Identifier name 'Government expenditure on education, total (% of government expenditure)' is too long
+[63, 18:43:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[63, 18:43:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[64, 18:43:27] SHOW DATABASES: Executing 
+[64, 18:43:27] SHOW DATABASES: OK
+[65, 18:43:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[65, 18:43:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[66, 18:43:36] SHOW COLUMNS FROM `cs306`.`expenditures`: Executing 
+[66, 18:43:36] SHOW COLUMNS FROM `cs306`.`expenditures`: OK
+[67, 18:43:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[67, 18:43:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[68, 18:43:52] SHOW TABLES FROM `cs306` like 'expenditure_share': Executing 
+[68, 18:43:52] SHOW TABLES FROM `cs306` like 'expenditure_share': OK
+[69, 18:43:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[69, 18:43:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[70, 18:43:57] SHOW DATABASES: Executing 
+[70, 18:43:57] SHOW DATABASES: OK
+[71, 18:44:14] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[71, 18:44:14] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[72, 18:46:20] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[72, 18:46:20] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[73, 18:46:20] SHOW DATABASES: Executing 
+[73, 18:46:20] SHOW DATABASES: OK
+[74, 18:46:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[74, 18:46:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[75, 18:46:28] SHOW COLUMNS FROM `cs306`.`literacy_reports`: Executing 
+[75, 18:46:28] SHOW COLUMNS FROM `cs306`.`literacy_reports`: OK
+[76, 18:46:59] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': Executing 
+[76, 18:46:59] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': OK
+[77, 18:47:02] DEALLOCATE PREPARE stmt: Executing 
+[77, 18:47:02] DEALLOCATE PREPARE stmt: OK
+[78, 18:47:33] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[78, 18:47:33] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[78, 18:47:33] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[79, 18:54:44] update cs306.literacy_reports 
+SET age = TRUE: Running...
+[79, 18:54:44] update cs306.literacy_reports 
+SET age = TRUE: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[80, 18:54:57] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[80, 18:54:57] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[80, 18:54:57] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[81, 18:55:11] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[81, 18:55:11] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[81, 18:55:11] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[82, 18:55:15] update cs306.literacy_reports 
+SET age = TRUE: Running...
+[82, 18:55:15] update cs306.literacy_reports 
+SET age = TRUE: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[83, 18:55:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[83, 18:55:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[83, 18:55:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[84, 18:55:22] update cs306.literacy_reports 
+SET age = 1: Running...
+[84, 18:55:22] update cs306.literacy_reports 
+SET age = 1: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[85, 18:55:53] update cs306.literacy_reports WHERE age == NULL 
+SET age = 1: Running...
+[85, 18:55:53] update cs306.literacy_reports WHERE age == NULL 
+SET age = 1: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE age == NULL 
+SET age = 1' at line 1
+[86, 18:56:08] update cs306.literacy_reports 
+SET age = 1 WHERE age == NULL: Running...
+[86, 18:56:08] update cs306.literacy_reports 
+SET age = 1 WHERE age == NULL: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== NULL' at line 2
+[87, 18:56:10] update cs306.literacy_reports 
+SET age = 1 WHERE age = NULL: Running...
+[87, 18:56:10] update cs306.literacy_reports 
+SET age = 1 WHERE age = NULL: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[88, 18:57:36] update cs306.literacy_reports 
+SET age = 0 WHERE age = 1: Running...
+[88, 18:57:36] update cs306.literacy_reports 
+SET age = 0 WHERE age = 1: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[89, 18:58:32] UPDATE `cs306`.`literacy_reports` SET `age` = '1' WHERE (`report_id` > '0'): Running...
+[89, 18:58:32] UPDATE `cs306`.`literacy_reports` SET `age` = '1' WHERE (`report_id` > '0'): 959 row(s) affected
+Rows matched: 959  Changed: 959  Warnings: 0
+[90, 18:58:37] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[90, 18:58:37] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[90, 18:58:37] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[91, 19:00:07] Apply changes to literacy_reports: Applying object changes ...
+[91, 19:00:09] Applying changes to literacy_reports...: 
+[91, 19:00:25] Apply changes to literacy_reports: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(1) NULL DEFAULT NULL COMMENT 'adult = 1\nyoung = 0'' at line 2
+SQL Statement:
+ALTER TABLE `cs306`.`literacy_reports` 
+CHANGE COLUMN `age` `age` (1) NULL DEFAULT NULL COMMENT 'adult = 1\nyoung = 0' 
+
+
+[92, 19:00:35] Apply changes to literacy_reports: Applying object changes ...
+[92, 19:00:40] Applying changes to literacy_reports...: 
+[92, 19:01:16] Apply changes to literacy_reports: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(1) NULL DEFAULT NULL COMMENT 'adult1,young0'' at line 2
+SQL Statement:
+ALTER TABLE `cs306`.`literacy_reports` 
+CHANGE COLUMN `age` `age` (1) NULL DEFAULT NULL COMMENT 'adult1,young0' 
+
+
+[93, 19:01:16] Apply changes to literacy_reports: Applying object changes ...
+[93, 19:02:26] Apply changes to literacy_reports: 
+[94, 19:02:56] UPDATE `cs306`.`literacy_reports` SET `gender` = '1' WHERE (`report_id` > '0'): Running...
+[94, 19:02:56] UPDATE `cs306`.`literacy_reports` SET `gender` = '1' WHERE (`report_id` > '0'): 959 row(s) affected
+Rows matched: 959  Changed: 959  Warnings: 0
+[95, 19:03:02] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[95, 19:03:02] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[95, 19:03:02] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 959 row(s) returned
+[96, 19:03:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[96, 19:03:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[97, 19:03:26] SHOW DATABASES: Executing 
+[97, 19:03:26] SHOW DATABASES: OK
+[98, 19:03:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[98, 19:03:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[99, 19:03:33] SHOW COLUMNS FROM `cs306`.`literacy_reports`: Executing 
+[99, 19:03:33] SHOW COLUMNS FROM `cs306`.`literacy_reports`: OK
+[100, 19:04:04] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': Executing 
+[100, 19:04:04] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': OK
+[101, 19:04:07] DEALLOCATE PREPARE stmt: Executing 
+[101, 19:04:07] DEALLOCATE PREPARE stmt: OK
+[102, 19:04:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[102, 19:04:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[102, 19:04:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[103, 19:04:41] UPDATE `cs306`.`literacy_reports` SET `gender` = '0' WHERE (`report_id` > '959'): Running...
+[103, 19:04:41] UPDATE `cs306`.`literacy_reports` SET `gender` = '0' WHERE (`report_id` > '959'): 959 row(s) affected
+Rows matched: 959  Changed: 959  Warnings: 0
+[104, 19:04:47] UPDATE `cs306`.`literacy_reports` SET `age` = '1' WHERE (`report_id` > '959'): Running...
+[104, 19:04:47] UPDATE `cs306`.`literacy_reports` SET `age` = '1' WHERE (`report_id` > '959'): 959 row(s) affected
+Rows matched: 959  Changed: 959  Warnings: 0
+[105, 19:04:49] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[105, 19:04:49] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[105, 19:04:49] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[106, 19:05:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[106, 19:05:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[107, 19:05:11] SHOW DATABASES: Executing 
+[107, 19:05:11] SHOW DATABASES: OK
+[108, 19:05:21] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[108, 19:05:21] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[109, 19:05:21] SHOW COLUMNS FROM `cs306`.`literacy_reports`: Executing 
+[109, 19:05:21] SHOW COLUMNS FROM `cs306`.`literacy_reports`: OK
+[110, 19:05:36] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': Executing 
+[110, 19:05:36] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': OK
+[111, 19:05:38] DEALLOCATE PREPARE stmt: Executing 
+[111, 19:05:38] DEALLOCATE PREPARE stmt: OK
+[112, 19:05:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[112, 19:05:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[112, 19:05:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[113, 19:06:30] SELECT * FROM cs306.literacy_reports where ('report_id' > 1000)
+LIMIT 0, 1000
+: Running...
+[113, 19:06:30] SELECT * FROM cs306.literacy_reports where ('report_id' > 1000)
+LIMIT 0, 1000
+: Fetching...
+[113, 19:06:30] SELECT * FROM cs306.literacy_reports where ('report_id' > 1000)
+LIMIT 0, 1000
+: 0 row(s) returned
+[114, 19:06:47] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: Running...
+[114, 19:06:47] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: Fetching...
+[114, 19:06:47] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: 0 row(s) returned
+[115, 19:06:50] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: Running...
+[115, 19:06:50] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: Fetching...
+[115, 19:06:50] SELECT * FROM cs306.literacy_reports where ('report_id' > 900)
+LIMIT 0, 1000
+: 0 row(s) returned
+[116, 19:06:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[116, 19:06:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[116, 19:06:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[117, 19:07:16] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[117, 19:07:16] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[117, 19:07:16] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[118, 19:08:03] UPDATE `cs306`.`literacy_reports` SET `age` = '0' WHERE (`report_id` > '1918'): Running...
+[118, 19:08:03] UPDATE `cs306`.`literacy_reports` SET `age` = '0' WHERE (`report_id` > '1918'): 716 row(s) affected
+Rows matched: 716  Changed: 716  Warnings: 0
+[119, 19:08:06] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[119, 19:08:06] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[119, 19:08:06] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[120, 19:08:38] UPDATE `cs306`.`literacy_reports` SET `gender` = '1' WHERE (`report_id` > '1918'): Running...
+[120, 19:08:38] UPDATE `cs306`.`literacy_reports` SET `gender` = '1' WHERE (`report_id` > '1918'): 716 row(s) affected
+Rows matched: 716  Changed: 716  Warnings: 0
+[121, 19:08:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[121, 19:08:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[121, 19:08:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[122, 19:09:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[122, 19:09:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[123, 19:09:17] SHOW DATABASES: Executing 
+[123, 19:09:17] SHOW DATABASES: OK
+[124, 19:09:21] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[124, 19:09:21] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[125, 19:09:21] SHOW COLUMNS FROM `cs306`.`literacy_reports`: Executing 
+[125, 19:09:21] SHOW COLUMNS FROM `cs306`.`literacy_reports`: OK
+[126, 19:09:33] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': Executing 
+[126, 19:09:33] PREPARE stmt FROM 'INSERT INTO `cs306`.`literacy_reports` (`country_code`,`year`,`rate`) VALUES(?,?,?)': OK
+[127, 19:09:35] DEALLOCATE PREPARE stmt: Executing 
+[127, 19:09:35] DEALLOCATE PREPARE stmt: OK
+[128, 19:09:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[128, 19:09:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[128, 19:09:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[129, 19:09:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[129, 19:09:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[129, 19:09:55] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[130, 19:10:14] UPDATE `cs306`.`literacy_reports` SET `gender` = '0' WHERE (`report_id` > '2634'): Running...
+[130, 19:10:14] UPDATE `cs306`.`literacy_reports` SET `gender` = '0' WHERE (`report_id` > '2634'): 716 row(s) affected
+Rows matched: 716  Changed: 716  Warnings: 0
+[131, 19:10:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[131, 19:10:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[131, 19:10:21] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[132, 19:10:43] UPDATE `cs306`.`literacy_reports` SET `age` = '0' WHERE (`report_id` > '2634'): Running...
+[132, 19:10:43] UPDATE `cs306`.`literacy_reports` SET `age` = '0' WHERE (`report_id` > '2634'): 716 row(s) affected
+Rows matched: 716  Changed: 716  Warnings: 0
+[133, 19:10:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[133, 19:10:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[133, 19:10:45] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[134, 19:11:56] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[134, 19:11:56] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[134, 19:11:56] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[135, 19:13:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[135, 19:13:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[136, 19:13:18] SHOW DATABASES: Executing 
+[136, 19:13:18] SHOW DATABASES: OK
+[137, 19:13:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[137, 19:13:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[138, 19:13:22] SHOW COLUMNS FROM `cs306`.`expenditures`: Executing 
+[138, 19:13:22] SHOW COLUMNS FROM `cs306`.`expenditures`: OK
+[139, 19:14:29] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[139, 19:14:29] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[140, 19:14:29] SHOW DATABASES: Executing 
+[140, 19:14:29] SHOW DATABASES: OK
+[141, 19:14:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[141, 19:14:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[142, 19:14:33] SHOW COLUMNS FROM `cs306`.`expenditures`: Executing 
+[142, 19:14:33] SHOW COLUMNS FROM `cs306`.`expenditures`: OK
+[143, 19:14:50] PREPARE stmt FROM 'INSERT INTO `cs306`.`expenditures` (`country_code`,`year`,`exp_percentage`) VALUES(?,?,?)': Executing 
+[143, 19:14:50] PREPARE stmt FROM 'INSERT INTO `cs306`.`expenditures` (`country_code`,`year`,`exp_percentage`) VALUES(?,?,?)': OK
+[144, 19:14:59] DEALLOCATE PREPARE stmt: Executing 
+[144, 19:14:59] DEALLOCATE PREPARE stmt: OK
+[145, 19:15:11] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: Running...
+[145, 19:15:11] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: Fetching...
+[145, 19:15:11] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[146, 19:15:32] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: Running...
+[146, 19:15:32] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: Fetching...
+[146, 19:15:32] SELECT * FROM cs306.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[147, 19:16:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[147, 19:16:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[148, 19:16:00] SHOW DATABASES: Executing 
+[148, 19:16:00] SHOW DATABASES: OK
+[149, 19:16:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[149, 19:16:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[150, 19:16:03] SHOW COLUMNS FROM `cs306`.`enrollment`: Executing 
+[150, 19:16:03] SHOW COLUMNS FROM `cs306`.`enrollment`: OK
+[151, 19:16:16] PREPARE stmt FROM 'INSERT INTO `cs306`.`enrollment` (`country_code`,`year`,`ratio`) VALUES(?,?,?)': Executing 
+[151, 19:16:16] PREPARE stmt FROM 'INSERT INTO `cs306`.`enrollment` (`country_code`,`year`,`ratio`) VALUES(?,?,?)': OK
+[152, 19:16:17] DEALLOCATE PREPARE stmt: Executing 
+[152, 19:16:17] DEALLOCATE PREPARE stmt: OK
+[153, 19:16:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[153, 19:16:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[154, 19:16:27] SHOW DATABASES: Executing 
+[154, 19:16:27] SHOW DATABASES: OK
+[155, 19:16:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[155, 19:16:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[156, 19:16:33] SHOW COLUMNS FROM `cs306`.`teacher_quality`: Executing 
+[156, 19:16:33] SHOW COLUMNS FROM `cs306`.`teacher_quality`: OK
+[157, 19:16:56] PREPARE stmt FROM 'INSERT INTO `cs306`.`teacher_quality` (`country_code`,`year`,`percentage`) VALUES(?,?,?)': Executing 
+[157, 19:16:56] PREPARE stmt FROM 'INSERT INTO `cs306`.`teacher_quality` (`country_code`,`year`,`percentage`) VALUES(?,?,?)': OK
+[158, 19:16:56] DEALLOCATE PREPARE stmt: Executing 
+[158, 19:16:56] DEALLOCATE PREPARE stmt: OK
+[159, 19:17:06] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Running...
+[159, 19:17:06] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Fetching...
+[159, 19:17:06] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[160, 19:17:18] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: Running...
+[160, 19:17:18] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: Fetching...
+[160, 19:17:18] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: 132 row(s) returned
+[161, 19:17:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[161, 19:17:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[162, 19:17:54] SHOW DATABASES: Executing 
+[162, 19:17:54] SHOW DATABASES: OK
+[163, 19:18:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[163, 19:18:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[164, 19:18:02] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[164, 19:18:02] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[165, 19:18:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[165, 19:18:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[166, 19:18:12] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[166, 19:18:12] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[167, 19:18:35] PREPARE stmt FROM 'INSERT INTO `cs306`.`countries` (`country_name`,`country_code`) VALUES(?,?)': Executing 
+[167, 19:18:35] PREPARE stmt FROM 'INSERT INTO `cs306`.`countries` (`country_name`,`country_code`) VALUES(?,?)': OK
+[168, 19:18:37] DEALLOCATE PREPARE stmt: Executing 
+[168, 19:18:37] DEALLOCATE PREPARE stmt: OK
+[169, 19:18:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: Running...
+[169, 19:18:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: Fetching...
+[169, 19:18:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: 165 row(s) returned
+[170, 19:20:48] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[170, 19:20:48] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[170, 19:20:48] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[171, 19:47:40] SHOW COLUMNS FROM `cs306`.`continents`: Executing 
+[171, 19:47:40] SHOW COLUMNS FROM `cs306`.`continents`: OK
+[172, 19:47:44] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[172, 19:47:44] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[173, 19:47:45] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[173, 19:47:45] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[174, 19:47:48] SHOW COLUMNS FROM `cs306`.`continents`: Executing 
+[174, 19:47:48] SHOW COLUMNS FROM `cs306`.`continents`: OK
+[175, 19:48:08] SHOW COLUMNS FROM `cs306`.`continents`: Executing 
+[175, 19:48:08] SHOW COLUMNS FROM `cs306`.`continents`: OK
+[176, 19:48:34] SELECT `continent_code`,`continent_name` FROM `cs306`.`continents` : Executing 
+[176, 19:48:34] SELECT `continent_code`,`continent_name` FROM `cs306`.`continents` : OK
+[177, 19:48:39] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[177, 19:48:39] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[178, 19:48:57] SELECT `country_code`,`country_name`,`population` FROM `cs306`.`countries` : Executing 
+[178, 19:48:57] SELECT `country_code`,`country_name`,`population` FROM `cs306`.`countries` : OK
+[179, 19:49:04] SHOW COLUMNS FROM `cs306`.`enrollment`: Executing 
+[179, 19:49:04] SHOW COLUMNS FROM `cs306`.`enrollment`: OK
+[180, 19:49:17] SELECT `enr_id`,`year`,`country_code`,`ratio` FROM `cs306`.`enrollment` : Executing 
+[180, 19:49:17] SELECT `enr_id`,`year`,`country_code`,`ratio` FROM `cs306`.`enrollment` : OK
+[181, 19:49:50] SHOW COLUMNS FROM `cs306`.`expenditures`: Executing 
+[181, 19:49:50] SHOW COLUMNS FROM `cs306`.`expenditures`: OK
+[182, 19:50:04] SELECT `exp_id`,`year`,`exp_percentage`,`country_code` FROM `cs306`.`expenditures` : Executing 
+[182, 19:50:04] SELECT `exp_id`,`year`,`exp_percentage`,`country_code` FROM `cs306`.`expenditures` : OK
+[183, 19:50:11] SHOW COLUMNS FROM `cs306`.`literacy_reports`: Executing 
+[183, 19:50:11] SHOW COLUMNS FROM `cs306`.`literacy_reports`: OK
+[184, 19:50:24] SELECT `report_id`,`country_code`,`rate`,`year`,`gender`,`age` FROM `cs306`.`literacy_reports` : Executing 
+[184, 19:50:24] SELECT `report_id`,`country_code`,`rate`,`year`,`gender`,`age` FROM `cs306`.`literacy_reports` : OK
+[185, 19:50:31] SHOW COLUMNS FROM `cs306`.`teacher_quality`: Executing 
+[185, 19:50:31] SHOW COLUMNS FROM `cs306`.`teacher_quality`: OK
+[186, 19:50:42] SELECT `quality_id`,`country_code`,`percentage`,`year` FROM `cs306`.`teacher_quality` : Executing 
+[186, 19:50:42] SELECT `quality_id`,`country_code`,`percentage`,`year` FROM `cs306`.`teacher_quality` : OK
+[1, 17:43:45] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 17:44:00] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 17:45:20] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 17:59:29] Apply changes to population: Applying object changes ...
+[1, 17:59:36] Applying changes to population...: 
+[1, 17:59:36] : Changes applied to population
+[1, 17:59:37] Apply changes to population: Changes applied
+[2, 17:59:45] Apply changes to population: Applying object changes ...
+[2, 17:59:47] Applying changes to population...: 
+[2, 17:59:47] : Changes applied to population
+[2, 17:59:48] Apply changes to population: Changes applied
+[3, 17:59:54] Apply changes to population: Applying object changes ...
+[3, 17:59:57] Applying changes to population...: 
+[3, 17:59:57] : Changes applied to population
+[3, 17:59:58] Apply changes to population: Changes applied
+[4, 18:00:20] Apply changes to population: Applying object changes ...
+[4, 18:00:22] Applying changes to population...: 
+[4, 18:00:22] : Changes applied to population
+[4, 18:00:23] Apply changes to population: Changes applied
+[5, 18:00:47] Apply changes to population: Applying object changes ...
+[5, 18:00:48] Applying changes to population...: 
+[5, 18:00:48] : Changes applied to population
+[5, 18:00:49] Apply changes to population: Changes applied
+[6, 18:01:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 18:01:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 18:01:35] SHOW DATABASES: Executing 
+[7, 18:01:35] SHOW DATABASES: OK
+[8, 18:01:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 18:01:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 18:01:44] SHOW COLUMNS FROM `cs306`.`population`: Executing 
+[9, 18:01:44] SHOW COLUMNS FROM `cs306`.`population`: OK
+[10, 18:03:06] SELECT * FROM cs306.population
+LIMIT 0, 1000
+: Running...
+[10, 18:03:06] SELECT * FROM cs306.population
+LIMIT 0, 1000
+: Fetching...
+[10, 18:03:06] SELECT * FROM cs306.population
+LIMIT 0, 1000
+: 0 row(s) returned
+[11, 18:03:14] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[11, 18:03:14] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[12, 18:03:14] SHOW DATABASES: Executing 
+[12, 18:03:14] SHOW DATABASES: OK
+[13, 18:03:20] DROP TABLE `cs306`.`population`: Running...
+[13, 18:03:20] DROP TABLE `cs306`.`population`: 0 row(s) affected
+[14, 18:03:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[14, 18:03:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[15, 18:03:27] SHOW COLUMNS FROM `cs306`.`population`: Executing 
+[15, 18:03:27] SHOW COLUMNS FROM `cs306`.`population`: Error Code: 1146
+Table 'cs306.population' doesn't exist
+[16, 18:03:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[16, 18:03:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[17, 18:03:34] SHOW DATABASES: Executing 
+[17, 18:03:34] SHOW DATABASES: OK
+[18, 18:03:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[18, 18:03:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[19, 18:03:36] SHOW TABLES FROM `cs306` like 'population': Executing 
+[19, 18:03:36] SHOW TABLES FROM `cs306` like 'population': OK
+[20, 18:08:00] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[20, 18:08:00] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[20, 18:08:00] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[21, 18:08:38] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Running...
+[21, 18:08:38] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Fetching...
+[21, 18:08:38] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: 1000 row(s) returned
+[22, 18:11:35] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Running...
+[22, 18:11:35] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Fetching...
+[22, 18:11:35] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: 1000 row(s) returned
+[23, 18:14:45] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Running...
+[23, 18:14:45] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[24, 18:14:47] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Running...
+[24, 18:14:47] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: Fetching...
+[24, 18:14:47] SELECT * FROM cs306.literacy_reports where (gender = 0)
+LIMIT 0, 1000
+: 1000 row(s) returned
+[25, 18:14:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[25, 18:14:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[25, 18:14:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[26, 18:14:59] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Running...
+[26, 18:14:59] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[27, 18:15:11] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Running...
+[27, 18:15:11] UPDATE literacy_reports
+SET gender = "w" WHERE gender = 0: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[28, 18:15:23] UPDATE literacy_reports
+SET gender = "w" WHERE(gender = 0): Running...
+[28, 18:15:23] UPDATE literacy_reports
+SET gender = "w" WHERE(gender = 0): Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[29, 18:16:46] UPDATE literacy_reports
+SET gender = "w" WHERE id IN ( select id from literacy_reports where gender = 0): Running...
+[29, 18:16:46] UPDATE literacy_reports
+SET gender = "w" WHERE id IN ( select id from literacy_reports where gender = 0): Error Code: 1054. Unknown column 'id' in 'field list'
+[30, 18:16:58] UPDATE literacy_reports
+SET gender = "w" WHERE report_id IN ( select report_id from literacy_reports where gender = 0): Running...
+[30, 18:16:58] UPDATE literacy_reports
+SET gender = "w" WHERE report_id IN ( select report_id from literacy_reports where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[31, 18:17:36] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[31, 18:17:36] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[32, 18:17:43] UPDATE literacy_reports
+SET gender = 'w'
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[32, 18:17:43] UPDATE literacy_reports
+SET gender = 'w'
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[33, 18:17:47] UPDATE literacy_reports
+SET gender = w
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[33, 18:17:47] UPDATE literacy_reports
+SET gender = w
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1054. Unknown column 'w' in 'field list'
+[34, 18:17:53] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[34, 18:17:53] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[35, 18:18:33] Apply changes to literacy_reports: Applying object changes ...
+[35, 18:18:35] Applying changes to literacy_reports...: 
+[35, 18:18:35] : Changes applied to literacy_reports
+[35, 18:18:36] Apply changes to literacy_reports: Changes applied
+[36, 18:18:40] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[36, 18:18:40] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[37, 18:19:12] UPDATE literacy_reports
+SET gender = 'w'
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Running...
+[37, 18:19:12] UPDATE literacy_reports
+SET gender = 'w'
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gender = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[38, 18:19:49] Apply changes to literacy_reports: Applying object changes ...
+[38, 18:19:51] Applying changes to literacy_reports...: 
+[38, 18:19:51] : Changes applied to literacy_reports
+[38, 18:19:52] Apply changes to literacy_reports: Changes applied
+[39, 18:20:02] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gendere = 0): Running...
+[39, 18:20:02] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gendere = 0): Error Code: 1054. Unknown column 'gender' in 'field list'
+[40, 18:20:31] Apply changes to literacy_reports: Applying object changes ...
+[40, 18:20:34] Apply changes to literacy_reports: 
+[41, 18:20:41] Apply changes to literacy_reports: Applying object changes ...
+[41, 18:20:44] Applying changes to literacy_reports...: 
+[41, 18:20:44] : Changes applied to literacy_reports
+[41, 18:20:46] Apply changes to literacy_reports: Changes applied
+[42, 18:20:49] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gendere = 0): Running...
+[42, 18:20:49] UPDATE literacy_reports
+SET gender = "w"
+WHERE report_id IN (
+select report_id 
+from literacy_reports 
+where gendere = 0): Error Code: 1093. You can't specify target table 'literacy_reports' for update in FROM clause
+[43, 18:22:56] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Running...
+[43, 18:22:56] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[44, 18:24:05] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Running...
+[44, 18:24:05] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[45, 18:25:29] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Running...
+[45, 18:25:29] UPDATE literacy_reports
+SET gender = 'w'
+WHERE gendere = 0: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[1, 18:32:13] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[1, 18:32:13] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[1, 18:32:13] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[2, 18:32:15] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[2, 18:32:15] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[2, 18:32:15] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[3, 18:32:49] UPDATE literacy_reports
+SET  gender = 'w'
+WHERE gendere = 0: Running...
+[3, 18:32:50] UPDATE literacy_reports
+SET  gender = 'w'
+WHERE gendere = 0: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[4, 18:32:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[4, 18:32:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[4, 18:32:52] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[5, 18:33:06] UPDATE literacy_reports
+SET  gender = 'm'
+WHERE gendere = 1: Running...
+[5, 18:33:06] UPDATE literacy_reports
+SET  gender = 'm'
+WHERE gendere = 1: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[6, 18:33:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[6, 18:33:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[6, 18:33:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[7, 18:33:38] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 1: Running...
+[7, 18:33:38] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 1: 1918 row(s) affected
+Rows matched: 1918  Changed: 1918  Warnings: 0
+[8, 18:33:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[8, 18:33:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[8, 18:33:40] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[9, 18:33:53] UPDATE literacy_reports
+SET  age = 'adult'
+WHERE agee = 1: Running...
+[9, 18:33:53] UPDATE literacy_reports
+SET  age = 'adult'
+WHERE agee = 1: 1918 row(s) affected
+Rows matched: 1918  Changed: 1918  Warnings: 0
+[10, 18:33:54] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[10, 18:33:54] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[10, 18:33:54] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[11, 18:34:02] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 0: Running...
+[11, 18:34:02] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 0: 1432 row(s) affected
+Rows matched: 1432  Changed: 1432  Warnings: 0
+[12, 18:34:04] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[12, 18:34:04] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[12, 18:34:04] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[13, 18:34:12] UPDATE literacy_reports
+SET  age = 'woman'
+WHERE gendere = 0: Running...
+[13, 18:34:12] UPDATE literacy_reports
+SET  age = 'woman'
+WHERE gendere = 0: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[14, 18:34:17] UPDATE literacy_reports
+SET  age = 'male'
+WHERE gendere = 1: Running...
+[14, 18:34:17] UPDATE literacy_reports
+SET  age = 'male'
+WHERE gendere = 1: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[15, 18:34:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[15, 18:34:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[15, 18:34:19] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[16, 18:34:24] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[16, 18:34:24] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[16, 18:34:24] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[17, 18:34:40] UPDATE literacy_reports
+SET  gender = 'male'
+WHERE gendere = 1: Running...
+[17, 18:34:40] UPDATE literacy_reports
+SET  gender = 'male'
+WHERE gendere = 1: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[18, 18:34:45] UPDATE literacy_reports
+SET  gender = 'female'
+WHERE gendere = 0: Running...
+[18, 18:34:45] UPDATE literacy_reports
+SET  gender = 'female'
+WHERE gendere = 0: 1675 row(s) affected
+Rows matched: 1675  Changed: 1675  Warnings: 0
+[19, 18:35:00] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 0: Running...
+[19, 18:35:00] UPDATE literacy_reports
+SET  age = 'young'
+WHERE agee = 0: 1432 row(s) affected
+Rows matched: 1432  Changed: 1432  Warnings: 0
+[20, 18:35:04] UPDATE literacy_reports
+SET  age = 'adult'
+WHERE agee = 1: Running...
+[20, 18:35:04] UPDATE literacy_reports
+SET  age = 'adult'
+WHERE agee = 1: 1918 row(s) affected
+Rows matched: 1918  Changed: 1918  Warnings: 0
+[21, 18:35:05] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[21, 18:35:05] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[21, 18:35:05] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[22, 18:35:20] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Running...
+[22, 18:35:20] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Fetching...
+[22, 18:35:20] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: 3350 row(s) returned
+[23, 18:41:21] Apply changes to literacy_reports: Applying object changes ...
+[23, 18:41:22] Applying changes to literacy_reports...: 
+[23, 18:41:23] : Changes applied to literacy_reports
+[23, 18:41:23] Apply changes to literacy_reports: Changes applied
+[24, 18:41:27] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Running...
+[24, 18:41:27] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Fetching...
+[24, 18:41:27] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: 3350 row(s) returned
+[25, 18:42:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[25, 18:42:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[26, 18:42:24] SHOW DATABASES: Executing 
+[26, 18:42:24] SHOW DATABASES: OK
+[27, 18:42:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[27, 18:42:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[28, 18:42:39] SHOW DATABASES: Executing 
+[28, 18:42:39] SHOW DATABASES: OK
+[29, 18:42:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[29, 18:42:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[30, 18:42:41] SHOW TABLES FROM `cs306` like 'country (1)': Executing 
+[30, 18:42:41] SHOW TABLES FROM `cs306` like 'country (1)': OK
+[31, 18:44:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[31, 18:44:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[32, 18:44:28] SHOW DATABASES: Executing 
+[32, 18:44:28] SHOW DATABASES: OK
+[33, 18:44:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[33, 18:44:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[34, 18:44:30] SHOW TABLES FROM `cs306` like 'country (1)': Executing 
+[34, 18:44:30] SHOW TABLES FROM `cs306` like 'country (1)': OK
+[35, 18:45:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[35, 18:45:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[36, 18:45:44] SHOW DATABASES: Executing 
+[36, 18:45:44] SHOW DATABASES: OK
+[37, 18:45:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[37, 18:45:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[38, 18:45:45] SHOW TABLES FROM `cs306` like 'country (1)': Executing 
+[38, 18:45:45] SHOW TABLES FROM `cs306` like 'country (1)': OK
+[39, 18:46:02]  CREATE TABLE `cs306`.`country (1)` (`country_name` text, `country_code` text, `year` int, `population` int): Executing 
+[39, 18:46:02]  CREATE TABLE `cs306`.`country (1)` (`country_name` text, `country_code` text, `year` int, `population` int): OK
+[40, 18:46:02] PREPARE stmt FROM 'INSERT INTO `cs306`.`country (1)` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': Executing 
+[40, 18:46:02] PREPARE stmt FROM 'INSERT INTO `cs306`.`country (1)` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': OK
+[41, 18:46:57] DEALLOCATE PREPARE stmt: Executing 
+[41, 18:46:57] DEALLOCATE PREPARE stmt: OK
+[42, 18:47:47] SELECT * FROM cs306.`country (1)`
+LIMIT 0, 5000
+: Running...
+[42, 18:47:47] SELECT * FROM cs306.`country (1)`
+LIMIT 0, 5000
+: Fetching...
+[42, 18:47:47] SELECT * FROM cs306.`country (1)`
+LIMIT 0, 5000
+: 5000 row(s) returned
+[43, 18:48:28] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[43, 18:48:28] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[43, 18:48:28] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 165 row(s) returned
+[44, 18:48:43] DROP TABLE `cs306`.`countries`: Running...
+[44, 18:48:43] DROP TABLE `cs306`.`countries`: 0 row(s) affected
+[45, 18:50:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[45, 18:50:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[46, 18:50:03] SHOW DATABASES: Executing 
+[46, 18:50:03] SHOW DATABASES: OK
+[47, 18:50:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 18:50:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 18:50:12] SHOW COLUMNS FROM `cs306`.`country (1)`: Executing 
+[48, 18:50:12] SHOW COLUMNS FROM `cs306`.`country (1)`: OK
+[49, 18:50:59] Apply changes to countries: Applying object changes ...
+[49, 18:51:03] Apply changes to countries: 
+[50, 18:51:15] Apply changes to countries: Applying object changes ...
+[50, 18:51:21] Applying changes to countries...: 
+[50, 18:51:43] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL ,
+ADD PRIMARY KEY (`country_code`, `year`)' at line 4
+SQL Statement:
+ALTER TABLE `cs306`.`country (1)` 
+CHANGE COLUMN `country_code` `country_code` VARCHAR(3) NOT NULL FIRST,
+CHANGE COLUMN `country_name` `country_name` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `year` `year`  NOT NULL ,
+ADD PRIMARY KEY (`country_code`, `year`)
+
+
+[51, 18:51:47] Apply changes to countries: Applying object changes ...
+[51, 18:51:49] Applying changes to countries...: 
+[51, 18:51:51] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL , RENAME TO  `cs306`.`countries`' at line 4
+SQL Statement:
+ALTER TABLE `cs306`.`country (1)` 
+CHANGE COLUMN `country_code` `country_code` VARCHAR(3) NOT NULL FIRST,
+CHANGE COLUMN `country_name` `country_name` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `year` `year`  NOT NULL , RENAME TO  `cs306`.`countries` 
+
+
+[52, 18:52:13] Apply changes to countries: Applying object changes ...
+[52, 18:52:16] Applying changes to countries...: 
+[52, 18:52:16] : Changes applied to countries
+[52, 18:52:17] Apply changes to countries: Changes applied
+[53, 18:52:23] Apply changes to countries: Applying object changes ...
+[53, 18:52:27] Applying changes to countries...: 
+[53, 18:52:27] : Changes applied to countries
+[53, 18:52:28] Apply changes to countries: Changes applied
+[54, 18:52:36] Apply changes to countries: Applying object changes ...
+[54, 18:52:41] Applying changes to countries...: 
+[54, 18:52:51] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL ,
+ADD PRIMARY KEY (`country_code`, `year`)' at line 3
+SQL Statement:
+ALTER TABLE `cs306`.`countries` 
+CHANGE COLUMN `country_code` `country_code` TEXT NOT NULL ,
+CHANGE COLUMN `year` `year`  NOT NULL ,
+ADD PRIMARY KEY (`country_code`, `year`)
+
+
+[55, 18:53:08] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[55, 18:53:08] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[55, 18:53:08] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[56, 18:53:27] SELECT * FROM cs306.countries WHERE year =NULL
+LIMIT 0, 5000
+: Running...
+[56, 18:53:27] SELECT * FROM cs306.countries WHERE year =NULL
+LIMIT 0, 5000
+: Fetching...
+[56, 18:53:27] SELECT * FROM cs306.countries WHERE year =NULL
+LIMIT 0, 5000
+: 0 row(s) returned
+[57, 18:53:36] SELECT * FROM cs306.countries WHERE country_code =NULL
+LIMIT 0, 5000
+: Running...
+[57, 18:53:36] SELECT * FROM cs306.countries WHERE country_code =NULL
+LIMIT 0, 5000
+: Fetching...
+[57, 18:53:36] SELECT * FROM cs306.countries WHERE country_code =NULL
+LIMIT 0, 5000
+: 0 row(s) returned
+[58, 18:53:43] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[58, 18:53:43] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[58, 18:53:43] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[59, 19:06:00] Apply changes to allocates: Applying object changes ...
+[59, 19:06:02] Applying changes to allocates...: 
+[59, 19:06:02] : Changes applied to allocates
+[59, 19:06:03] Apply changes to allocates: Changes applied
+[60, 19:06:05] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[60, 19:06:05] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[60, 19:06:05] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[61, 19:06:09] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[61, 19:06:09] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[61, 19:06:09] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[62, 19:06:14] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[62, 19:06:14] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[62, 19:06:14] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[63, 19:06:27] DROP TABLE `cs306`.`allocates`: Running...
+[63, 19:06:27] DROP TABLE `cs306`.`allocates`: 0 row(s) affected
+[64, 19:07:21] Apply changes to countries: Applying object changes ...
+[64, 19:07:24] Applying changes to countries...: 
+[64, 19:07:25] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL ,
+ADD PRIMARY KEY (`population_id`)' at line 4
+SQL Statement:
+ALTER TABLE `cs306`.`countries` 
+ADD COLUMN `population_id` INT NOT NULL AUTO_INCREMENT FIRST,
+CHANGE COLUMN `country_code` `country_code` TEXT NULL ,
+CHANGE COLUMN `year` `year`  NULL ,
+ADD PRIMARY KEY (`population_id`)
+
+
+[65, 19:07:36] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[65, 19:07:36] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[65, 19:07:36] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[66, 19:07:39] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[66, 19:07:39] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[66, 19:07:39] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[67, 19:08:04] Apply changes to countries: Applying object changes ...
+[67, 19:08:05] Applying changes to countries...: 
+[67, 19:08:05] : Changes applied to countries
+[67, 19:08:07] Apply changes to countries: Changes applied
+[68, 19:08:11] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[68, 19:08:11] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[68, 19:08:12] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[69, 19:09:15] DROP TABLE `cs306`.`countries`: Running...
+[69, 19:09:15] DROP TABLE `cs306`.`countries`: 0 row(s) affected
+[70, 19:10:18] DROP TABLE `cs306`.`continents`: Running...
+[70, 19:10:18] DROP TABLE `cs306`.`continents`: 0 row(s) affected
+[71, 19:10:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[71, 19:10:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[72, 19:10:48] SHOW DATABASES: Executing 
+[72, 19:10:48] SHOW DATABASES: OK
+[73, 19:10:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[73, 19:10:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[74, 19:10:55] SHOW TABLES FROM `cs306` like 'countries': Executing 
+[74, 19:10:55] SHOW TABLES FROM `cs306` like 'countries': OK
+[75, 19:12:49] Apply changes to countries: Applying object changes ...
+[75, 19:12:53] Applying changes to countries...: 
+[75, 19:12:53] : Changes applied to countries
+[75, 19:12:55] Apply changes to countries: Changes applied
+[76, 19:12:57] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[76, 19:12:57] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[76, 19:12:57] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 0 row(s) returned
+[77, 19:13:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[77, 19:13:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[78, 19:13:27] SHOW DATABASES: Executing 
+[78, 19:13:27] SHOW DATABASES: OK
+[79, 19:13:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[79, 19:13:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[80, 19:13:30] SHOW COLUMNS FROM `cs306`.`countries`: Executing 
+[80, 19:13:30] SHOW COLUMNS FROM `cs306`.`countries`: OK
+[81, 19:13:38] PREPARE stmt FROM 'INSERT INTO `cs306`.`countries` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': Executing 
+[81, 19:13:38] PREPARE stmt FROM 'INSERT INTO `cs306`.`countries` (`country_name`,`country_code`,`year`,`population`) VALUES(?,?,?,?)': OK
+[82, 19:14:36] DEALLOCATE PREPARE stmt: Executing 
+[82, 19:14:36] DEALLOCATE PREPARE stmt: OK
+[83, 19:14:51] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[83, 19:14:51] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[83, 19:14:51] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[84, 19:15:59] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[84, 19:15:59] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[84, 19:15:59] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[85, 19:21:49] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Running...
+[85, 19:21:49] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: Fetching...
+[85, 19:21:49] SELECT * FROM cs306.countries
+LIMIT 0, 5000
+: 5000 row(s) returned
+[86, 19:28:19] CREATE TABLE allocates(
+	population_id INT,
+    exp_id INT,
+    PRIMARY KEY (population_id, exp_id),
+    FOREIGN KEY (population_id) REFERENCES countries(population_id),
+    FOREIGN KEY(exp_id) REFERENCES expenditures(exp_id)
+): Running...
+[86, 19:28:19] CREATE TABLE allocates(
+	population_id INT,
+    exp_id INT,
+    PRIMARY KEY (population_id, exp_id),
+    FOREIGN KEY (population_id) REFERENCES countries(population_id),
+    FOREIGN KEY(exp_id) REFERENCES expenditures(exp_id)
+): 0 row(s) affected
+[87, 19:28:26] SELECT * FROM cs306.allocates
+LIMIT 0, 5000
+: Running...
+[87, 19:28:26] SELECT * FROM cs306.allocates
+LIMIT 0, 5000
+: Fetching...
+[87, 19:28:26] SELECT * FROM cs306.allocates
+LIMIT 0, 5000
+: 0 row(s) returned
+[1, 15:52:35] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Running...
+[1, 15:52:35] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: Fetching...
+[1, 15:52:35] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 5000
+: 3350 row(s) returned
+[2, 15:52:44] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 10000
+: Running...
+[2, 15:52:44] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 10000
+: Fetching...
+[2, 15:52:44] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 10000
+: 3350 row(s) returned
+[3, 15:53:28] SELECT * FROM cs306.countries
+LIMIT 0, 10000
+: Running...
+[3, 15:53:28] SELECT * FROM cs306.countries
+LIMIT 0, 10000
+: Fetching...
+[3, 15:53:28] SELECT * FROM cs306.countries
+LIMIT 0, 10000
+: 5811 row(s) returned
+[4, 15:53:51] SELECT * FROM cs306.enrollment
+LIMIT 0, 10000
+: Running...
+[4, 15:53:51] SELECT * FROM cs306.enrollment
+LIMIT 0, 10000
+: Fetching...
+[4, 15:53:51] SELECT * FROM cs306.enrollment
+LIMIT 0, 10000
+: 333 row(s) returned
+[5, 15:54:40] SELECT * FROM cs306.allocates
+LIMIT 0, 10000
+: Running...
+[5, 15:54:40] SELECT * FROM cs306.allocates
+LIMIT 0, 10000
+: Fetching...
+[5, 15:54:40] SELECT * FROM cs306.allocates
+LIMIT 0, 10000
+: 0 row(s) returned
+[6, 15:54:42] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 10000
+: Running...
+[6, 15:54:42] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 10000
+: Fetching...
+[6, 15:54:42] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 10000
+: 132 row(s) returned
+[7, 15:54:53] SELECT * FROM cs306.expenditures
+LIMIT 0, 10000
+: Running...
+[7, 15:54:53] SELECT * FROM cs306.expenditures
+LIMIT 0, 10000
+: Fetching...
+[7, 15:54:53] SELECT * FROM cs306.expenditures
+LIMIT 0, 10000
+: 3239 row(s) returned

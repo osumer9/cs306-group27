@@ -1,0 +1,84 @@
+18:32:47 [INF][      Workbench]: Starting up Workbench
+18:32:47 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources
+	plugin path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/PlugIns
+	struct path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/grt
+	module path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/PlugIns:/Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/plugins
+	library path: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources/libraries
+	user data dir: /Users/mortonorto/Library/Application Support/MySQL/Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+18:32:47 [INF][      WBContext]: WbContext::init
+18:32:47 [INF][            WBA]: Looking for extension modules for WBA...
+18:32:47 [INF][            WBA]: 0 extension modules found
+18:32:48 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+18:32:48 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+18:32:48 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for macOS version 8.0.32 CE build 2612062 (64 bit)
+	Configuration Directory: /Users/mortonorto/Library/Application Support/MySQL/Workbench
+	Data Directory: /Users/mortonorto/Desktop/MySQLWorkbench.app/Contents/Resources
+	Cairo Version: 1.17.6
+	OS: macOS 12.x Monterey x86_64
+	CPU: 8x Apple M2 - 16.00GiB RAM
+No video adapter info available
+
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_sakila_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_manage_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_network_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_user_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_number_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_open_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_more_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_sakila_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_manage_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_folder@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_network_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_user_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_plus_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_doc_sql@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_number_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_close@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_open_dark@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: wb_tile_more_dark@2x.png
+18:32:48 [INF][      WBContext]: Opening SQL Editor window to ''...
+18:32:48 [WRN][         mforms]: Resource file not found: snippet_sql@2x.png
+18:32:48 [WRN][         mforms]: Resource file not found: busy_sidebar_mac@2x.png
+18:32:48 [INF][  column_widths]: Initializing column width cache for unconnected
+18:32:49 [WRN][         mforms]: Resource file not found: editor_statement@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: editor_error@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: editor_breakpoint@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: editor_breakpoint_hit@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: editor_current_pos@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: editor_continue_on_error@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_keyword@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_schema@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_table@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_routine@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_function@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_view@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_column@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_operator@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_engine@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_trigger@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_logfilegroup@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_uservar@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_sysvar@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_tablespace@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_event@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_index@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_user@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_charset@2x.png
+18:32:49 [WRN][         mforms]: Resource file not found: ac_collation@2x.png
+20:38:48 [INF][      Workbench]: Shutting down Workbench
+20:38:48 [INF][      Workbench]: Workbench shutdown done

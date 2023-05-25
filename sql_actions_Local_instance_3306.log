@@ -1,0 +1,646 @@
+[1, 14:46:29] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 15:11:14] Apply changes to EduRank: Applying object changes ...
+[1, 15:11:20] Applying changes to EduRank...: 
+[1, 15:11:20] : Changes applied to EduRank
+[1, 15:11:22] Apply changes to EduRank: Changes applied
+[2, 15:15:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[2, 15:15:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[3, 15:15:10] SHOW DATABASES: Executing 
+[3, 15:15:10] SHOW DATABASES: OK
+[4, 15:15:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[4, 15:15:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[5, 15:15:38] SHOW TABLES FROM `EduRank` like 'enrollment_report': Executing 
+[5, 15:15:38] SHOW TABLES FROM `EduRank` like 'enrollment_report': OK
+[6, 15:16:00]  CREATE TABLE `EduRank`.`enrollment_report` (`enr_id` int, `year` int, `country_code` text, `ratio` double): Executing 
+[6, 15:16:00]  CREATE TABLE `EduRank`.`enrollment_report` (`enr_id` int, `year` int, `country_code` text, `ratio` double): OK
+[7, 15:16:00] PREPARE stmt FROM 'INSERT INTO `EduRank`.`enrollment_report` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': Executing 
+[7, 15:16:00] PREPARE stmt FROM 'INSERT INTO `EduRank`.`enrollment_report` (`enr_id`,`year`,`country_code`,`ratio`) VALUES(?,?,?,?)': OK
+[8, 15:16:01] DEALLOCATE PREPARE stmt: Executing 
+[8, 15:16:01] DEALLOCATE PREPARE stmt: OK
+[9, 15:18:26] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Running...
+[9, 15:18:26] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: Fetching...
+[9, 15:18:26] SELECT * FROM sys.sys_config
+LIMIT 0, 1000
+: 6 row(s) returned
+[10, 15:18:36] SELECT * FROM sys.host_summary
+LIMIT 0, 1000
+: Running...
+[10, 15:18:36] SELECT * FROM sys.host_summary
+LIMIT 0, 1000
+: Fetching...
+[10, 15:18:36] SELECT * FROM sys.host_summary
+LIMIT 0, 1000
+: 1 row(s) returned
+[11, 15:20:05] Apply changes to enrollment_report: Applying object changes ...
+[11, 15:20:17] Apply changes to enrollment_report: 
+[12, 15:20:34] Apply changes to enrollment_report: Applying object changes ...
+[12, 15:20:37] Applying changes to enrollment_report...: 
+[12, 15:20:37] : Changes applied to enrollment_report
+[12, 15:20:39] Apply changes to enrollment_report: Changes applied
+[13, 15:27:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[13, 15:27:18] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[14, 15:27:18] SHOW DATABASES: Executing 
+[14, 15:27:18] SHOW DATABASES: OK
+[15, 15:27:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[15, 15:27:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[16, 15:27:30] SHOW TABLES FROM `EduRank` like 'expenditures': Executing 
+[16, 15:27:30] SHOW TABLES FROM `EduRank` like 'expenditures': OK
+[17, 15:27:39]  CREATE TABLE `EduRank`.`expenditures` (`exp_id` int, `year` int, `exp_percentage` double, `country_code` text): Executing 
+[17, 15:27:39]  CREATE TABLE `EduRank`.`expenditures` (`exp_id` int, `year` int, `exp_percentage` double, `country_code` text): OK
+[18, 15:27:39] PREPARE stmt FROM 'INSERT INTO `EduRank`.`expenditures` (`exp_id`,`year`,`exp_percentage`,`country_code`) VALUES(?,?,?,?)': Executing 
+[18, 15:27:39] PREPARE stmt FROM 'INSERT INTO `EduRank`.`expenditures` (`exp_id`,`year`,`exp_percentage`,`country_code`) VALUES(?,?,?,?)': OK
+[19, 15:27:48] DEALLOCATE PREPARE stmt: Executing 
+[19, 15:27:48] DEALLOCATE PREPARE stmt: OK
+[20, 15:28:00] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Running...
+[20, 15:28:00] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Fetching...
+[20, 15:28:00] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[21, 15:29:16] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: Running...
+[21, 15:29:16] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: Fetching...
+[21, 15:29:16] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: 333 row(s) returned
+[22, 15:29:43] Apply changes to enrollment_report: Applying object changes ...
+[22, 15:29:43] Apply changes to enrollment_report: No changes detected
+[23, 15:30:34] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Running...
+[23, 15:30:34] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Fetching...
+[23, 15:30:34] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[24, 15:30:50] Apply changes to expenditures: Applying object changes ...
+[24, 15:30:55] Applying changes to expenditures...: 
+[24, 15:30:55] : Changes applied to expenditures
+[24, 15:31:02] Apply changes to expenditures: Changes applied
+[25, 15:32:13] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: Running...
+[25, 15:32:13] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: Fetching...
+[25, 15:32:13] SELECT * FROM EduRank.enrollment_report
+LIMIT 0, 1000
+: 333 row(s) returned
+[1, 15:33:23] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Running...
+[1, 15:33:23] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Fetching...
+[1, 15:33:23] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[2, 15:33:40] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Running...
+[2, 15:33:40] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: Fetching...
+[2, 15:33:40] SELECT * FROM EduRank.expenditures
+LIMIT 0, 1000
+: 1000 row(s) returned
+[3, 15:34:15] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 15:34:15] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 15:34:15] SHOW DATABASES: Executing 
+[4, 15:34:15] SHOW DATABASES: OK
+[5, 15:34:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[5, 15:34:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[6, 15:34:31] SHOW TABLES FROM `EduRank` like 'literacy_report': Executing 
+[6, 15:34:31] SHOW TABLES FROM `EduRank` like 'literacy_report': OK
+[7, 15:34:41]  CREATE TABLE `EduRank`.`literacy_report` (`report_id` int, `country_code` text, `rate` double, `year` int, `gender` int, `age` int): Executing 
+[7, 15:34:41]  CREATE TABLE `EduRank`.`literacy_report` (`report_id` int, `country_code` text, `rate` double, `year` int, `gender` int, `age` int): OK
+[8, 15:34:41] PREPARE stmt FROM 'INSERT INTO `EduRank`.`literacy_report` (`report_id`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': Executing 
+[8, 15:34:41] PREPARE stmt FROM 'INSERT INTO `EduRank`.`literacy_report` (`report_id`,`country_code`,`rate`,`year`,`gender`,`age`) VALUES(?,?,?,?,?,?)': OK
+[9, 15:34:55] DEALLOCATE PREPARE stmt: Executing 
+[9, 15:34:55] DEALLOCATE PREPARE stmt: OK
+[10, 15:36:21] Apply changes to literacy_report: Applying object changes ...
+[10, 15:36:29] Applying changes to literacy_report...: 
+[10, 15:36:29] : Changes applied to literacy_report
+[10, 15:36:35] Apply changes to literacy_report: Changes applied
+[11, 15:44:42] SELECT * FROM EduRank.literacy_report
+LIMIT 0, 1000
+: Running...
+[11, 15:44:42] SELECT * FROM EduRank.literacy_report
+LIMIT 0, 1000
+: Fetching...
+[11, 15:44:42] SELECT * FROM EduRank.literacy_report
+LIMIT 0, 1000
+: 1000 row(s) returned
+[12, 15:44:52] DROP TABLE `EduRank`.`literacy_report`: Running...
+[12, 15:44:52] DROP TABLE `EduRank`.`literacy_report`: 0 row(s) affected
+[13, 15:51:53] DROP TABLE `EduRank`.`enrollment_report`: Running...
+[13, 15:51:53] DROP TABLE `EduRank`.`enrollment_report`: 0 row(s) affected
+[14, 15:51:57] DROP TABLE `EduRank`.`expenditures`: Running...
+[14, 15:51:57] DROP TABLE `EduRank`.`expenditures`: 0 row(s) affected
+[15, 15:58:29] DROP DATABASE `EduRank`: Running...
+[15, 15:58:29] DROP DATABASE `EduRank`: 0 row(s) affected
+[16, 16:01:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: Running...
+[16, 16:01:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: Fetching...
+[16, 16:01:44] SELECT * FROM cs306.countries
+LIMIT 0, 1000
+: 1000 row(s) returned
+[17, 16:01:53] Apply changes to country: Applying object changes ...
+[17, 16:01:54] Applying changes to country...: 
+[17, 16:01:54] : Changes applied to country
+[17, 16:01:56] Apply changes to country: Changes applied
+[18, 16:02:06] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Running...
+[18, 16:02:06] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Fetching...
+[18, 16:02:06] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: 1000 row(s) returned
+[19, 16:02:44] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Running...
+[19, 16:02:44] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Fetching...
+[19, 16:02:44] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: 1000 row(s) returned
+[20, 16:03:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[20, 16:03:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[20, 16:03:07] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[21, 16:03:12] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[21, 16:03:12] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[21, 16:03:12] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[22, 16:05:07] ANALYZE TABLE `cs306`.`allocates`: Executing 
+[22, 16:05:07] ANALYZE TABLE `cs306`.`allocates`: OK
+[23, 16:05:10] ANALYZE TABLE `cs306`.`allocates`: Executing 
+[23, 16:05:10] ANALYZE TABLE `cs306`.`allocates`: OK
+[24, 16:06:03] Apply changes to allocates: Applying object changes ...
+[24, 16:06:21] Apply changes to allocates: 
+[25, 16:07:28] Apply changes to allocates: Applying object changes ...
+[25, 16:07:29] Applying changes to allocates...: 
+[25, 16:07:35] Apply changes to allocates: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'allocates_ibfk_1' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`allocates` 
+ADD CONSTRAINT `allocates_ibfk_1`
+  FOREIGN KEY (`population_id` , `exp_id`)
+  REFERENCES `cs306`.`country` (`population_id` , `population_id`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE
+
+
+[26, 16:07:41] Apply changes to allocates: Applying object changes ...
+[26, 16:07:42] Applying changes to allocates...: 
+[26, 16:08:04] Apply changes to allocates: Error 1091: Can't DROP 'allocates_ibfk_1'; check that column/key exists
+SQL Statement:
+ALTER TABLE `cs306`.`allocates` 
+DROP FOREIGN KEY `allocates_ibfk_1`
+
+
+[27, 16:16:07] DROP TABLE `cs306`.`allocates`: Running...
+[27, 16:16:07] DROP TABLE `cs306`.`allocates`: 0 row(s) affected
+[28, 16:16:15] Apply changes to country_instance: Applying object changes ...
+[28, 16:16:23] Applying changes to country_instance...: 
+[28, 16:16:23] : Changes applied to country_instance
+[28, 16:16:25] Apply changes to country_instance: Changes applied
+[29, 16:37:56] Apply changes to allocates: Applying object changes ...
+[29, 16:37:58] Applying changes to allocates...: 
+[29, 16:37:58] : Changes applied to allocates
+[29, 16:37:59] Apply changes to allocates: Changes applied
+[30, 16:38:44] Apply changes to country: Applying object changes ...
+[30, 16:38:46] Applying changes to country...: 
+[30, 16:38:46] : Changes applied to country
+[30, 16:38:48] Apply changes to country: Changes applied
+[31, 16:38:57] Apply changes to allocates: Applying object changes ...
+[31, 16:38:57] Apply changes to allocates: No changes detected
+[32, 16:40:12] Apply changes to allocates: Applying object changes ...
+[32, 16:40:21] Applying changes to allocates...: 
+[32, 16:40:21] : Changes applied to allocates
+[32, 16:40:23] Apply changes to allocates: Changes applied
+[33, 16:42:37] Apply changes to allocates: Applying object changes ...
+[33, 16:43:04] Applying changes to allocates...: 
+[33, 16:43:26] Apply changes to allocates: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`allocates` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`year` , `country_code`)
+  REFERENCES `cs306`.`country` (`population_instance_id` , `country_name`),
+ADD CONSTRAINT `year`
+  FOREIGN KEY (`year` , `country_code`)
+  REFERENCES `cs306`.`expenditures` (`exp_id` , `country_code`)
+
+
+[34, 16:47:13] Apply changes to country: Applying object changes ...
+[34, 16:47:14] Applying changes to country...: 
+[34, 16:47:30] Apply changes to country: Error 1054: Unknown column '' in 'country'
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+DROP COLUMN `population`,
+DROP COLUMN `year`,
+DROP COLUMN `population_instance_id`,
+CHANGE COLUMN `` `country_code` CHAR(3) NOT NULL ,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`country_code`)
+
+
+[35, 16:47:36] DROP TABLE `cs306`.`country`: Running...
+[35, 16:47:36] DROP TABLE `cs306`.`country`: 0 row(s) affected
+[36, 16:47:41] DROP TABLE `cs306`.`allocates`: Running...
+[36, 16:47:41] DROP TABLE `cs306`.`allocates`: 0 row(s) affected
+[37, 16:50:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[37, 16:50:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[38, 16:50:48] SHOW DATABASES: Executing 
+[38, 16:50:48] SHOW DATABASES: OK
+[39, 16:50:59] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[39, 16:50:59] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[40, 16:50:59] SHOW TABLES FROM `cs306` like 'country': Executing 
+[40, 16:50:59] SHOW TABLES FROM `cs306` like 'country': OK
+[41, 16:51:01]  CREATE TABLE `cs306`.`country` (`country_name` text, `country_code` text): Executing 
+[41, 16:51:01]  CREATE TABLE `cs306`.`country` (`country_name` text, `country_code` text): OK
+[42, 16:51:01] PREPARE stmt FROM 'INSERT INTO `cs306`.`country` (`country_name`,`country_code`) VALUES(?,?)': Executing 
+[42, 16:51:01] PREPARE stmt FROM 'INSERT INTO `cs306`.`country` (`country_name`,`country_code`) VALUES(?,?)': OK
+[43, 16:51:02] DEALLOCATE PREPARE stmt: Executing 
+[43, 16:51:02] DEALLOCATE PREPARE stmt: OK
+[44, 16:51:16] Apply changes to country: Applying object changes ...
+[44, 16:51:17] Applying changes to country...: 
+[44, 16:51:25] Apply changes to country: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+[45, 16:51:31] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Running...
+[45, 16:51:31] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Fetching...
+[45, 16:51:31] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[46, 16:51:45] Apply changes to country: Applying object changes ...
+[46, 16:51:49] Applying changes to country...: 
+[46, 16:52:04] Apply changes to country: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+[47, 16:52:07] Apply changes to country: Applying object changes ...
+[47, 16:52:08] Applying changes to country...: 
+[47, 16:52:14] Apply changes to country: Error 1170: BLOB/TEXT column 'country_code' used in key specification without a key length
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_code` `country_code` TEXT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+[48, 16:52:49] Apply changes to country: Applying object changes ...
+[48, 16:52:50] Applying changes to country...: 
+[48, 16:52:53] Apply changes to country: Error 1406: Data too long for column 'country_name' at row 24
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(20) NULL DEFAULT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(3) NULL DEFAULT NULL 
+
+
+[49, 16:53:01] Apply changes to country: Applying object changes ...
+[49, 16:53:03] Applying changes to country...: 
+[49, 16:53:11] Apply changes to country: Error 1406: Data too long for column 'country_name' at row 24
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(20) NOT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(3) NOT NULL ,
+ADD PRIMARY KEY (`country_code`)
+
+
+[50, 16:53:20] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Running...
+[50, 16:53:20] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: Fetching...
+[50, 16:53:20] SELECT * FROM cs306.country
+LIMIT 0, 1000
+: 201 row(s) returned
+[51, 16:54:07] Apply changes to country: Applying object changes ...
+[51, 16:54:08] Applying changes to country...: 
+[51, 16:54:22] Apply changes to country: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ,
+ADD PRIMARY KEY (`country_code`),
+ADD UNIQUE INDEX `country_name_UNIQUE` (`c' at line 3
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+CHANGE COLUMN `country_name` `country_name` VARCHAR(30) NULL DEFAULT NULL ,
+CHANGE COLUMN `country_code` `country_code` CHAR(4) GENERATED ALWAYS AS () ,
+ADD PRIMARY KEY (`country_code`),
+ADD UNIQUE INDEX `country_name_UNIQUE` (`country_name` ASC) VISIBLE
+
+
+[52, 16:54:53] Apply changes to country: Applying object changes ...
+[52, 16:54:54] Applying changes to country...: 
+[52, 16:54:54] : Changes applied to country
+[52, 16:54:56] Apply changes to country: Changes applied
+[53, 16:55:05] Apply changes to country: Applying object changes ...
+[53, 16:55:05] Apply changes to country: No changes detected
+[54, 16:59:12] Apply changes to allocates: Applying object changes ...
+[54, 16:59:13] Applying changes to allocates...: 
+[54, 16:59:47] Apply changes to allocates: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NULL,
+  `exp_id` INT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+[55, 17:00:02] Apply changes to allocates: Applying object changes ...
+[55, 17:00:03] Applying changes to allocates...: 
+[55, 17:00:06] Apply changes to allocates: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE CASCADE
+    ON UPDATE C' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NOT NULL,
+  `exp_id` INT NOT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+[56, 17:00:18] Apply changes to allocates: Applying object changes ...
+[56, 17:00:19] Applying changes to allocates...: 
+[56, 17:00:58] Apply changes to allocates: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE' at line 6
+SQL Statement:
+CREATE TABLE `cs306`.`allocates` (
+  `country_code` CHAR(4) NOT NULL,
+  `exp_id` INT NOT NULL,
+  INDEX `exp_id_idx` (`exp_id` ASC) VISIBLE,
+  CONSTRAINT `country_code`
+    FOREIGN KEY ()
+    REFERENCES `cs306`.`expenditures` ()
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `exp_id`
+    FOREIGN KEY (`exp_id`)
+    REFERENCES `cs306`.`expenditures` (`exp_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+
+
+[57, 17:02:37] Apply changes to allocates: Applying object changes ...
+[57, 17:02:38] Applying changes to allocates...: 
+[57, 17:02:39] : Changes applied to allocates
+[57, 17:02:41] Apply changes to allocates: Changes applied
+[58, 17:02:51] Apply changes to allocates: Applying object changes ...
+[58, 17:02:51] Apply changes to allocates: No changes detected
+[59, 17:05:13] Apply changes to proclaims: Applying object changes ...
+[59, 17:05:14] Applying changes to proclaims...: 
+[59, 17:05:14] : Changes applied to proclaims
+[59, 17:05:15] Apply changes to proclaims: Changes applied
+[60, 17:06:35] Apply changes to proclaims: Applying object changes ...
+[60, 17:06:36] Applying changes to proclaims...: 
+[60, 17:06:52] Apply changes to proclaims: Error 1826: Duplicate foreign key constraint name 'country_code'
+SQL Statement:
+
+ALTER TABLE `cs306`.`proclaims` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`country` (`country_code`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `enr_id`
+  FOREIGN KEY (`enr_id`)
+  REFERENCES `cs306`.`enrollment` (`enr_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `quality_id`
+  FOREIGN KEY (`quality_id`)
+  REFERENCES `cs306`.`teacher_quality` (`quality_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `report_id`
+  FOREIGN KEY (`report_id`)
+  REFERENCES `cs306`.`literacy_reports` (`report_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+[61, 17:07:37] Apply changes to proclaims: Applying object changes ...
+[61, 17:07:51] Applying changes to proclaims...: 
+[61, 17:08:27] Apply changes to proclaims: Error 1061: Duplicate key name 'country_code_idx'
+SQL Statement:
+ALTER TABLE `cs306`.`proclaims` 
+ADD INDEX `country_code_idx` (`country_code` ASC) VISIBLE,
+ADD INDEX `enr_id_idx` (`enr_id` ASC) VISIBLE,
+ADD INDEX `quality_id_idx` (`quality_id` ASC) VISIBLE,
+ADD INDEX `report_id_idx` (`report_id` ASC) VISIBLE
+
+
+[62, 17:12:13] Apply changes to expenditure_report: Applying object changes ...
+[62, 17:12:14] Applying changes to expenditure_report...: 
+[62, 17:12:14] : Changes applied to expenditure_report
+[62, 17:12:21] Apply changes to expenditure_report: Changes applied
+[63, 17:12:32] DROP TABLE `cs306`.`allocates`: Running...
+[63, 17:12:32] DROP TABLE `cs306`.`allocates`: 0 row(s) affected
+[64, 17:14:52] Apply changes to proclaims: Applying object changes ...
+[64, 17:14:54] Applying changes to proclaims...: 
+[64, 17:14:54] : Changes applied to proclaims
+[64, 17:14:55] Apply changes to proclaims: Changes applied
+[65, 17:16:15] Apply changes to proclaims: Applying object changes ...
+[65, 17:16:17] Applying changes to proclaims...: 
+[65, 17:16:17] : Changes applied to proclaims
+[65, 17:16:18] Apply changes to proclaims: Changes applied
+[66, 17:17:59] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: Running...
+[66, 17:17:59] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: Fetching...
+[66, 17:17:59] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: 0 row(s) returned
+[67, 17:18:54] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: Running...
+[67, 17:18:54] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: Fetching...
+[67, 17:18:54] SELECT * FROM cs306.teacher_quality
+LIMIT 0, 1000
+: 132 row(s) returned
+[68, 17:18:56] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: Running...
+[68, 17:18:56] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: Fetching...
+[68, 17:18:56] SELECT * FROM cs306.proclaims
+LIMIT 0, 1000
+: 0 row(s) returned
+[69, 17:19:06] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: Running...
+[69, 17:19:06] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: Fetching...
+[69, 17:19:06] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: 1000 row(s) returned
+[70, 17:19:27] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Running...
+[70, 17:19:27] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Fetching...
+[70, 17:19:27] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[71, 17:34:11] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Running...
+[71, 17:34:11] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: Fetching...
+[71, 17:34:11] SELECT * FROM cs306.enrollment
+LIMIT 0, 1000
+: 333 row(s) returned
+[72, 17:36:42] Apply changes to enrollment_report: Applying object changes ...
+[72, 17:36:43] Applying changes to enrollment_report...: 
+[72, 17:36:43] : Changes applied to enrollment_report
+[72, 17:36:45] Apply changes to enrollment_report: Changes applied
+[73, 17:36:58] Apply changes to teacher_quality_report: Applying object changes ...
+[73, 17:36:59] Applying changes to teacher_quality_report...: 
+[73, 17:36:59] : Changes applied to teacher_quality_report
+[73, 17:37:00] Apply changes to teacher_quality_report: Changes applied
+[74, 17:37:10] SELECT * FROM cs306.enrollment_report
+LIMIT 0, 1000
+: Running...
+[74, 17:37:10] SELECT * FROM cs306.enrollment_report
+LIMIT 0, 1000
+: Fetching...
+[74, 17:37:10] SELECT * FROM cs306.enrollment_report
+LIMIT 0, 1000
+: 333 row(s) returned
+[75, 17:37:47] Apply changes to enrollment_report: Applying object changes ...
+[75, 17:37:48] Applying changes to enrollment_report...: 
+[75, 17:37:50] Apply changes to enrollment_report: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'country'
+SQL Statement:
+
+ALTER TABLE `cs306`.`enrollment_report` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`country` (`country_name`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+[76, 17:38:30] Apply changes to teacher_quality_report: Applying object changes ...
+[76, 17:38:31] Applying changes to teacher_quality_report...: 
+[76, 17:38:31] : Changes applied to teacher_quality_report
+[76, 17:38:37] Apply changes to teacher_quality_report: Changes applied
+[77, 17:38:46] Apply changes to enrollment_report: Applying object changes ...
+[77, 17:38:47] Applying changes to enrollment_report...: 
+[77, 17:38:47] : Changes applied to enrollment_report
+[77, 17:38:48] Apply changes to enrollment_report: Changes applied
+[78, 17:38:57] Apply changes to literacy_reports: Applying object changes ...
+[78, 17:38:59] Applying changes to literacy_reports...: 
+[78, 17:38:59] : Changes applied to literacy_reports
+[78, 17:39:00] Apply changes to literacy_reports: Changes applied
+[79, 17:39:08] Apply changes to expenditure_report: Applying object changes ...
+[79, 17:39:09] Applying changes to expenditure_report...: 
+[79, 17:39:09] : Changes applied to expenditure_report
+[79, 17:39:10] Apply changes to expenditure_report: Changes applied
+[80, 17:42:05] Apply changes to teacher_quality_report: Applying object changes ...
+[80, 17:42:06] Applying changes to teacher_quality_report...: 
+[80, 17:42:06] : Changes applied to teacher_quality_report
+[80, 17:42:07] Apply changes to teacher_quality_report: Changes applied
+[81, 17:46:44] Apply changes to literacy_reports: Applying object changes ...
+[81, 17:46:45] Applying changes to literacy_reports...: 
+[81, 17:46:45] : Changes applied to literacy_reports
+[81, 17:46:45] Apply changes to literacy_reports: Changes applied
+[82, 17:52:39] Apply changes to country: Applying object changes ...
+[82, 17:52:40] Applying changes to country...: 
+[82, 17:52:46] Apply changes to country: Error 1822: Failed to add the foreign key constraint. Missing index for constraint 'country_code' in the referenced table 'expenditure_report'
+SQL Statement:
+ALTER TABLE `cs306`.`country` 
+ADD CONSTRAINT `country_code`
+  FOREIGN KEY (`country_code`)
+  REFERENCES `cs306`.`expenditure_report` (`country_code`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+
+
+[83, 18:12:39] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Running...
+[83, 18:12:39] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: Fetching...
+[83, 18:12:39] SELECT * FROM cs306.literacy_reports
+LIMIT 0, 1000
+: 1000 row(s) returned
+[84, 18:13:12] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: Running...
+[84, 18:13:12] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: Fetching...
+[84, 18:13:12] SELECT * FROM cs306.expenditure_report
+LIMIT 0, 1000
+: 1000 row(s) returned
